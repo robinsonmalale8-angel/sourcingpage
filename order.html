@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Products - Ultimate Sourcing</title>
+</head>
+<body>
+
+<header>
+    <img src="Ultimate.png" alt="Ultimate Sourcing Logo">
+    <button class="menu-btn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="order.html">Place Order</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+</header>
+
+<main>
+    <section class="product-showcase">
+
+        <h2>Our Featured Products</h2>
+        <p>Click "Read More" on any product to view and order products of the same item.</p>
+
+<div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search products..." class="search-bar">
+        <button onclick="handleSearch()">Search</button>
+</div>
+
+        <div class="product-cards">
+            <!-- Product 1 -->
+            <div class="product-card" 
+                 data-name="Mobile Phones"
+                 data-gallery='[
+                     "https://images.unsplash.com/photo-1763455466215-fe9465df4a23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAxfHxpcGhvbmUlMjAxNyUyMHByb21hfGVufDB8fDB8fHww",
+                     "https://images.unsplash.com/photo-1738830274216-20f63b8a0c02?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                     "https://images.unsplash.com/photo-1760597371617-5c0652f58178?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
+                     "https://images.unsplash.com/photo-1758577515371-b80dcd299490?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                     "https://images.unsplash.com/photo-1725305096092-eb0765b0af4e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                     "https://images.unsplash.com/photo-1662371697742-b5b612c62629?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8b3Bwb3xlbnwwfHwwfHx8MA%3D%3D",
+                     "https://images.unsplash.com/photo-1772683828745-7c2b6542adfb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8",
+                     "https://images.unsplash.com/photo-1746123726090-c8e262cb3341?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dml2b3xlbnwwfHwwfHx8MA%3D%3D",
+                     "https://www.notebookcheck.net/fileadmin/_processed_/e/f/csm_Nothing_Phone_1_7_93fb8c093d.jpg",
+                     "https://images.unsplash.com/photo-1694747554569-da20f4b15175?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                     "https://images.unsplash.com/photo-1716234664353-70f5db44acf0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                     "https://www.timesbull.com/wp-content/uploads/2025/10/Top-Motorola-Stock-Android-Phones-Of-2025-1.jpg",
+                     "https://mykariakoo.co.tz/cdn/shop/products/1_347bf929-6623-47ab-a73f-d94c37a2279e_600x.jpg?v=1602805775"
+                 ]'>
+                <img src="https://images.unsplash.com/photo-1763455466215-fe9465df4a23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAxfHxpcGhvbmUlMjAxNyUyMHByb21hfGVufDB8fDB8fHww" alt="Phone accessories">
+                <div class="card-content">
+                    <h3>Mobile Phones</h3>
+                    <p>Exclucsive and premium quality smartphones at competitive prices.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" 
+                 data-name="phone accessories"
+                 data-gallery='[
+                     "https://images.unsplash.com/photo-1677145503755-5a8c581671fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGhvbmUlMjBhY2Nlc3Nvcmllc3xlbnwwfHwwfHx8MA%3D%3D",
+                     "https://images.unsplash.com/photo-1593830566460-2464575a9a24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+                     "https://plus.unsplash.com/premium_photo-1679056944603-3a1e03fe68d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWFycG9kc3xlbnwwfHwwfHx8MA%3D%3D",
+                     "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhlYWRwaG9uZXxlbnwwfHwwfHx8MA%3D%3D",
+                     "https://zyrontech.com.au/cdn/shop/files/powaflex-20000mah-power-bank-941913.jpg?v=1726767719&width=1500",
+                     "https://m.media-amazon.com/images/I/61igxtquV0L.jpg",
+                     "https://images.thdstatic.com/productImages/deb8dc1d-6e2a-4688-8319-89839b99d167/svn/vrbgify-telephone-accessories-487sa04-427d-e1_600.jpg",
+                     "https://alibuy.lk/wp-content/uploads/2024/09/3-31.jpg",
+                     "https://cdn.mos.cms.futurecdn.net/6ptSH9iyxk8Zg7whfGS3PQ.jpg",
+                     "https://m.media-amazon.com/images/I/71cz+zFjc2L.jpg",
+                     "https://images.unsplash.com/photo-1617625802912-cde586faf331?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8"
+                 ]'>
+                <img src="https://images.unsplash.com/photo-1550029402-8280f657d8d1?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Phone accessories">
+                <div class="card-content">
+                    <h3>Phone accessories</h3>
+                    <p>High-quality phone cases, screen protectors, and charging accessories for all your devices.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card" 
+                 data-name="Home appliances"
+                 data-gallery='[
+                     "https://www.stellisonselectrical.co.uk/media/catalog/product/cache/4ae023eae5c6c134dba0f643c3f0818b/l/g/lg_gslc40pype_1350374_34-0100-0301.png",
+                     "https://hisense-extra.co.tz/wp-content/uploads/2025/01/Hisense-10.5kg-Front-Load-Smart-Auto-Washing-Machine.webp",
+                     "https://i5.walmartimages.com/asr/3956abde-4a9e-4937-8b88-3948ce14ce9d.ff364eac54a371b44bbe0a0e5b5efe60.jpeg",
+                     "https://cdn.trotec.com/fit-in/350x350/filters:format(jpg)/en_DE/1210003004/Aircooler-PAE-21-101397-1551777329.jpg",
+                     "https://hisenseshowroom.co.tz/cdn/shop/files/hisense-36-000btu-inverter-split-unit-ac-485.webp?v=1765321213",
+                     "https://www.sencor.com/Sencor/media/content/Products/SLE-65US800TCSB-2.jpg",
+                     "https://img.freepik.com/free-vector/white-blue-iron-side-view-realistic-vector-illustration_1284-66726.jpg?semt=ais_hybrid&w=740&q=80",
+                     "https://www.geraldgiles.co.uk/app/uploads/2017/11/EDP503W-Beko-Electric-Cooker-with-Hotplate-hob.jpg",
+                     "https://m.media-amazon.com/images/I/714AOdNWrBL._AC_SL1500_.jpg",
+                     "https://cdn.thewirecutter.com/wp-content/media/2023/09/pressure-cooker-2048px-9805.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H39c0b49fbf454363b2f55f2f44e181d2w/High-Quality-1200W-14L-Electric-Oven-Kitchen-Appliances-Without-Oil-Electric-Toaster-Oven.jpg_300x300.jpg",
+                     "https://www.jiomart.com/images/product/original/rvbcwvv26g/maxtan-stainless-steel-3-shelf-wall-mount-kitchen-racks-dish-rack-with-cutlery-and-shyamte-kitchen-stand-18x18-product-images-orvbcwvv26g-p601974171-1-202305300543.jpg?im=Resize=(420,420)",
+                     "https://images.impala.co.tz/public/photos/3AcsKK4AwupBreJIpCx2D4ypY8qcEqro9MlLgAU1.jpg",
+                     "https://odayshoptanzania.com/wp-content/uploads/2024/03/3-1.webp",
+                     "https://m.media-amazon.com/images/I/71TegbOlx7L._SL1000_.jpg",
+                     "https://media.currys.biz/i/currysprod/coffee-machines-bean-to-cup?fmt=auto&$q-large$",
+                     "https://tunzaa.nyc3.digitaloceanspaces.com/products/cover_images/343_0_1746604642_webp",
+                     "https://s.alicdn.com/@sc04/kf/Hd4a3b26de1eb451cbafcb6746325624dz/Space-Heater-Portable-Electric-Heaters-for-Indoor-Use-with-Thermostat-Fan-Mode-1500W-PTC-Ceramic-Fast-Safety-Heat-Fan-Heater.jpg_300x300.jpg",
+                     "https://tunzaa.nyc3.digitaloceanspaces.com/products/cover_images/157_0_1691999104_png",
+                     "https://images.impala.co.tz/public/photos/ZT0VZtFtlp9MXsjxZWSV5THkkPHTeC0HZaL8aAPw.jpg",
+                     "https://www.shutterstock.com/image-photo/porcelain-dinner-breakfast-set-600nw-2468287527.jpg",
+                     "https://m.media-amazon.com/images/I/81iVm54wMjL._AC_UF894,1000_QL80_.jpg"
+                 ]'>
+                <img src="https://www.goldmedalindia.com/blog/wp-content/uploads/2023/05/Which-home-appliances-use-the-most-electricity-new.jpg" alt="Home appliance">
+                <div class="card-content">
+                    <h3>Home appliance</h3>
+                    <p>High-quality home appliances designed for durability and performance.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" 
+                 data-name="Tech devices"
+                 data-gallery='[
+                     "https://images.unsplash.com/photo-1645283127103-2a4467b54f0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D",
+                     "https://images.unsplash.com/photo-1663354027456-ce6a7e07d212?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHAlMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D",
+                     "https://www.huaweicentral.com/wp-content/uploads/2025/01/PC-1000x576.jpg",
+                     "https://static-media.laptopoutlet.co.uk/magefan_blog/Review-Lenovo-ThinkPad-T490S-14-Best-Laptop-Deal_-Intel-Core-i7.jpg",
+                     "https://images-cdn.ubuy.co.in/634d2b13d709276bbd389462-dell-inspiron-7577-7000-15-6-inch-full.jpg",
+                     "https://shop.powercomputers.co.tz/wp-content/uploads/2022/10/1.png",
+                     "https://9to5toys.com/wp-content/uploads/sites/5/2026/03/Acer-Aspire-16-Copilot-PC.jpg?quality=82&strip=all",
+                     "https://i.extremetech.com/imagery/content-types/02q1uZjd9uF7WmldvKmtJzi/hero-image.fit_lim.size_1600x900.v1736260711.webp",
+                     "https://image.made-in-china.com/202f0j00fcJWwARllvUk/Gaming-PC-I7-10700-16GB-32g-DDR4-512g-SSD-HDD-Assembled-All-in-One-Computers-Office-Traning-PC.webp",
+                     "https://images.unsplash.com/photo-1698668975271-2ba9a323be6b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMyfHx8ZW58MHx8fHx8",
+                     "https://i.ebayimg.com/images/g/MYAAAeSw0RxpXoi4/s-l1600.webp",
+                     "https://empire.co.tz/cdn/shop/files/9730HP.jpg?v=1722237572",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4i5il2BV_xvWpDDSKyXdeZQbU7BQ05tz2VQ&s",
+                     "https://masumin.co.tz/cdn/shop/products/SPD_MMAE-7V3Q4Z_FL_H_520x520_c78d1e20-c41b-411a-aaf3-695a4f5c796a_1024x1024.jpg?v=1656592632",
+                     "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6538/6538187_rd.jpg",
+                     "https://www.ashtontv.co.uk/wp-content/uploads/2020/08/ps5-digital-slim-1.jpeg",
+                     "https://p.turbosquid.com/ts-thumb/Nb/AJClrF/cZ/0/png/1638601209/1920x1080/fit_q87/974638e97f0f43700a9b03efb9e379b2d6e0ec71/0.jpg",
+                     "https://www.intervid-africa.co.za/wp-content/uploads/Types-of-CCTV-Cameras-Surveillance-Cameras.webp",
+                     "https://img.freepik.com/premium-photo/photography-studio-setup-with-equipment-lighting_1257223-130042.jpg",
+                     "https://i.ytimg.com/vi/o5NCWn9Tc7k/maxresdefault.jpg",
+                     "https://static.vecteezy.com/system/resources/thumbnails/031/551/458/small/large-wide-digital-inkjet-printing-machine-during-production-generative-ai-photo.jpg"
+                 ]'>
+                <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFjYm9va3xlbnwwfHwwfHx8MA%3D%3D" alt="Tech devices">
+                <div class="card-content">
+                    <h3>Tech devices</h3>
+                    <p>Latest technology and innovative devices for your business needs .</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+             <div class="product-card" 
+                 data-name="Auto-mobiles"
+                 data-gallery='[
+                     "https://www.topgear.com/sites/default/files/2023/04/2-1682055203.jpg",
+                     "https://www.topgear.com/sites/default/files/2025/09/Chery%20-%20Tiggo%208%20-%20Plug%20in%20Hybrid-002_0.jpg",
+                     "https://imgcdn.zigwheels.ph/large/gallery/exterior/194/3238/jetour-t2-full-front-view-722793.jpg",
+                     "https://image.made-in-china.com/2f0j00JMqhCzWnAPRU/Byd-Yangwang-U8-for-Sale-Automobile-Vehicles-Car-Long-Battery-Life.webp",
+                     "https://i.ytimg.com/vi/Cis6-lXOi-Q/maxresdefault.jpg",
+                     "https://www.fawpretoria.co.za/images/Trucks/Tractor/JH6-28-500FT-6.jpg",
+                     "https://sc04.alicdn.com/kf/H0ced672659f54603bda59057ab36861cW.jpg",
+                     "https://shacmanafrica.co.za/wp-content/uploads/2025/03/Shacman-X3000-Series.jpg",
+                     "https://image.made-in-china.com/2f0j00hkNoEAlMrBqT/Dongfeng-Brand-New-2023-Tractor-Truck-Head-6X4-Tractor-Truck-with-Factory-Price.webp",
+                     "https://www.sinotrukinternation.com/uploadfile/2024/0701/20240701212812967.jpg",
+                     "https://jacuae.com/new-data/truck-images/tractor4x2.jpg",
+                     "https://en.yutong.com/af-res/res/import/1900825243157663744/images/img/f477370d4e974129b1d96feb28f46dc7.webp",
+                     "https://image.made-in-china.com/2f0j00mwrbZlqaCQcT/Luxury-65-Zhong-Tong-Manual-Speed-Zhongtong-Buses-for-Sale-Manual-Mini-Bus-Manual-Transmission-Left-Hand-Drive-120.webp",
+                     "https://sc04.alicdn.com/kf/Heb6b88c3fc3844a5a163e0a4e99175eeE.jpg",
+                     "https://image.made-in-china.com/202f0j00mPyornzsyFgh/Bajaji-Motorcycle-150cc-Motorized-China-Passenger-Tricyles-for-Taxi-Use.webp",
+                     "https://shopcdnpro.grainajz.com/category/400791/2560/377913448bd69be2531aa7a18c8314bf/d38fe6f9283ab0b551bdc026f42ced3f.jpg",
+                     "https://lh4.googleusercontent.com/proxy/ZU_HY6S3T7h-A5wlNUI9RaS8Bsr7Y4D0i-mZJOgtnVpxdCUDnxUO5DXR76oDZDaRCtQQR4r67BT0FZ96-b6p_7vESmOtZJeyZUaTqvL0QIaLUtYlhx9sp0YJBfleVbq4YuDwnu3ENrGu3uiXZ_kU",
+                     "https://paultan.org/image/2020/04/2020-Super-Soco-electric-motorcycle-2-630x392.png",
+                     "https://s.alicdn.com/@sc04/kf/Hfecd0be4216d41e191a28fb0afb9cfc4Y/Electric-Sports-Bike-Racing-Motorcycles-Ce-Electric-Scooter-Shanghai.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5f8407eac7ef4725b03bef7d238e6556u.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H57ab9cf2433344c1a11e9101986c2a11m.png",
+                     "https://tunzaa.nyc3.digitaloceanspaces.com/products/cover_images/157_3_1764852794_jpg"
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8WWLo4KzhwLtKlk8NPH6eYm6qvCLyiBiToQ&s"
+                 ]'>
+                <img src="https://cdn1.vogel.de/JHtcjB1ox3NXpDvpI1iGZSKWTYo=/fit-in/800x0/p7i.vogel.de/wcms/bc/4e/bc4e14bd8e4bb96db3eca578e3365784/0124034767v1.jpeg" alt="Auto-mobiles">
+                <div class="card-content">
+                    <h3>Auto-mobiles</h3>
+                    <p>Explore our wide range of high-quality automobiles and find the perfect match for your needs.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+              <div class="product-card" 
+                 data-name="Auto parts"
+                 data-gallery='[
+                     "https://sc04.alicdn.com/kf/H3846881ee4d545f885bdc872e5d8d956I/Tengka-4-Stroke-Vertical-Shaft-Diesel-Engine.jpg_350x350.jpg",
+                     "https://media.torque.com.sg/public/2018/09/what-is-a-dual-clutch-gearbox.jpg",
+                     "https://store.supashock.com/cdn/shop/articles/Shock_Absorber_Meaning.jpg?v=1685685469",
+                     "https://www.qualitytire.com/wp-content/uploads/2019/01/custom-wheels.png",
+                     "https://cdn.autodoc.de/thumb?id=7022308&m=0&n=0&lng=en&rev=94077915",
+                     "https://saiko.com.my/my_asset/blog/complete-guide-to-wheel-hub-bearings-2024.jpg",
+                     "https://steeringly.com/wp-content/uploads/2023/10/drive-shaft.jpg",
+                     "https://octanecdn.com/mrcleancarwashnew/1_v6enginepistons3dimage.j_215142.jpg",
+                     "https://cdn.shopify.com/s/files/1/0724/1387/2423/files/BlueOceanConsulting-322164-two-spark-plugs-blogbanner1.jpg?v=1725638432",
+                     "https://images.jdmagicbox.com/quickquotes/images_main/timing-belt-2021609388-9qomcctp.jpg",
+                     "https://i.ebayimg.com/images/g/bQoAAOSwv-Zk41jA/s-l1200.jpg",
+                     "https://www.pgfilters.com/wp-content/uploads/2023/02/What-is-the-Oil-Filters-Primary-Job_-1000x675-1.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4V6HeTPl2gBr1hlDFBdnCoHXYd9OIwpOIyA&s",
+                     "https://m.media-amazon.com/images/I/71oqsUY1VBL._AC_UF1000,1000_QL80_.jpg",
+                     "https://www.onlineautomotive.co.uk/_next/image?url=https%3A%2F%2Fimages.websellerpro.com%2FSolidDAPBosch.jpg&w=1080&q=75",
+                     "https://www.brembostore.com/cdn/shop/files/XTRA_Front_Right_Disc_Brake_Caliper_-_FALA22_02.jpg?v=1771740985&width=1600",
+                     "https://s.alicdn.com/@sc04/kf/Heb19418e58404d619e4030ae45987746m/Auto-Classic-Parts-Suspension-Car-Lower-Ball-Joint-for-toyota-nissan-honda-hyundai-Kia-Mazda-mitsubishi-Suzuki-subaru-Isuzu-ford.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H024af275ad0e47aca2eb8ae50be891bf3/KINGSTEEL-Auto-Steering-Gear-Box-Power-Steering-Rack-for-TOYOTA-NISSAN-HONDA-MAZDA-SUZUKI-FORD-MITSUBISHI-HYUNDAI.jpg",
+                     "https://www.chengguangbattery.com/uploadImages/webp/PIC01066QQ%E5%9B%BE%E7%89%8720231206155139.jpg.webp",
+                     "https://i5.walmartimages.com/seo/A-Premium-Alternator-Compatible-Hyundai-Sonata-15-19-Santa-Fe-19-20-Sport-17-18-Kia-Optima-16-20-Sorento-15-20-Sportage-17-21-2-0L-2-4L-12V-150A-6-Gr_0c1db198-5378-428e-a7a8-260012d0c3df.202d9b1775166e2d6802f9cd3c0d02a5.jpeg",
+                     "https://image.made-in-china.com/202f0j00KEQovBMyfcrC/Modified-Car-Lights-for-2011-2013-Toyota-Corolla-LED-Headlights-Assembly.webp",
+                     "https://realtruck.com/production/steelcraft-elevation-front-bumper-stc-60-12280c-2020-ram-2500-01/r/800x600/fff/80/66deb2a2d373347887b1076b5deca178.jpeg",
+                     "https://www.breakerlink.com/blog/wp-content/uploads/2016/02/door.jpg",
+                     "https://images.jdmagicbox.com/quickquotes/images_main/mild-steel-car-mild-steel-mud-flap-uli82q7s.jpg",
+                     "https://autoshack.com/on/demandware.static/-/Sites-autoshack-master-catalog/default/dwcf1f1ffa/images/KAPNI1320167_1.jpg",
+                     "https://www.autospareworld.in/uploaded_files/11cf0c7d1a6ccc.jpg",
+                     "https://www.sirvisual.com/Attachment/100/P8554_AutoImg_Main.jpg",
+                     "https://www.shutterstock.com/image-photo/red-metallic-fender-on-white-600nw-2132754351.jpg",
+                     "https://chinaheavytruckparts.com/wp-content/uploads/2023/02/howo-a7-parts-cab.webp",
+                     "https://www.tyreworldchina.com/upfile/AT-X-off-road-tires479.webp",
+                     "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/58/3817814/1.jpg?0938",
+                     "https://partland.co.za/wp-content/uploads/2025/05/13526DB.webp",
+                     "https://www.carbonaccents.co.uk/cdn/shop/files/IMG_2469.jpg?v=1755692568"
+                 ]'>
+                <img src="https://img.freepik.com/premium-photo/professional-3d-illustration-car-parts-auto-car-spare-white-background_269655-13243.jpg" alt="Auto parts">
+                <div class="card-content">
+                    <h3>Auto parts</h3>
+                    <p>High-quality auto parts for all your vehicle needs.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+             <div class="product-card" 
+                 data-name="Machineries"
+                 data-gallery='[
+                     "https://sc04.alicdn.com/kf/H3846881ee4d545f885bdc872e5d8d956I/Tengka-4-Stroke-Vertical-Shaft-Diesel-Engine.jpg_350x350.jpg",
+                     "https://ilrorwxhklpilq5p-static.micyjz.com/cloud/lrBpoKnllnSRjjqniiqiiq/China-7HP-Petrol-Water-Pump-Farm-Irrigation-Gasoline-Petrol-Engine-Water-Pumping-Machine4-800-800.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-LfTa4sE9kzS5k_od3TvkyYwaqjYchsJIw&s",
+                     "https://image.made-in-china.com/202f0j00lZYUgdEsZrcA/Changfa-Grain-Corn-Seed-Combine-Wheeled-Harvester-CF806.jpg",
+                     "https://s.alicdn.com/@sc04/kf/A0cc6601c0af5412aacbd297aaff0df47M.png",
+                     "https://s.alicdn.com/@sc04/kf/H2595ff4342ba4dd181a6fd45aa2fc629O/high-quality-plough-320-farm-30-hp-tractor-tillage-plough-china-supplier.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha45fc72270534eaf872417fb05a0f761m/62M-Heavy-Duty-Agricultural-Irrigation-Sprinkler-360-Gear-Drive-Rain-Gun-with-Nozzle-for-Big-Industry-Watering.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H625b934164184b2ea2cae2d3de28f493l/6.5hp-Z2065-8bar-Mini-Portable-Gasoline-Engine-air-Compressor-with-CE.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5c654ca757b84d32ae4f14d74b48f573o/Senci-Gasoline-Generator-5kw-5-Kva-Power-Generator-Open-Frame-Portable-Generator-for-Home.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H9426a93de564474b83e5dfae180a58db8/5KW-8KW-10KW-China-Cheap-Price-Generator-Factory-Cheap-Standby-Silent-Small-Diesel-Genset.jpg",
+                     "https://www.kentepower.com/uploads/8d9d4c2f4.jpg",
+                     "https://www.rudraequipment.in/wp-content/uploads/2025/04/heavy-duty-750-1500-kg-kcd-electric-winch.jpg"
+                 ]'>
+                <img src="https://sc04.alicdn.com/kf/H3846881ee4d545f885bdc872e5d8d956I/Tengka-4-Stroke-Vertical-Shaft-Diesel-Engine.jpg_350x350.jpg" alt="Machineries">
+                <div class="card-content">
+                    <h3>Machineries</h3>
+                    <p>High-quality  machinery for efficient operations.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+            
+             <div class="product-card" 
+                 data-name="Electrical materials"
+                 data-gallery='[
+                     "https://s.alicdn.com/@sc04/kf/H6912aef51bbb4e8e88f5349daa663aabm/Wholesale-Pure-Copper-BV-Cable-Single-Core-XLPE-Insulated-PVC-Flat-2.5mm-4mm-10mm-25mm-Electrical-Wire-Solid-Stranded-MOQ-100m.jpg",
+                     "https://www.tongou.com/wp-content/uploads/2024/03/TOMD6-tongou-circuit-breaker-dc-mini-2p.jpg.webp",
+                     "https://image.made-in-china.com/202f0j00puQUdLCJCFqG/Sollatek-Voltage-Switcher-Surge-Protector-AVS-30AMPS.webp",
+                     "https://s.alicdn.com/@sc04/kf/H74251f710d31448fbaee075111b5ee4dh/China-Manufacturer-10x38mm-Fuse-Link-Gpv-25A-Fuse-Core-Link-Solar-Dc-Fuse.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa1qXhUfR5hbqXmCKbjtwvX-ZT14staEvg4w&s",
+                     "https://s.alicdn.com/@sc04/kf/He6ddf56eb61347f8817e286f5826b93eO/Pattresses-Boxes-Switch-Flush-Mount-Electrical-PVC-Junction-Wall-Switch-Box.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnK0CmgyKexZXwNpjnZCc3J6Wue_5Tlqn8Q&s",
+                     "https://s.alicdn.com/@sc04/kf/He45dbd1b641a41d8acb8c7054166eb1ez/Hot-Extension-Cable-Socket-16A-Power-Extension-Socket-Surge-Protector-Electrical-Power-Strip-Extension-Board-with-Usb-Port.jpg",
+                     "https://www.changan-electric.com/uploads/CB4-BC21.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha0e3b4566c5e4b6b9a4ee9ca6690f77eP/QZ-new-high-quality-automotive-relay-auto-car-electrical-relay-12V-40A-5PIN-JD1914.jpg_300x300.jpg",
+                     "https://www.chintglobal.com/content/dam/chintsite/global/en/about-us/news-center/blog/2021-q1/chint-nc7-ac-contactor-20210421.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0ce1f76fdef145618507c92fc132c3c2G/Power-Distribution-Box-3-Phase-Panel-Board-Power-Distribution-Cabinet-Switchboard-Board.jpg_300x300.jpg",
+                     "https://www.newenergy-gn.com/upload/20251120/160150_70557.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB1SkgUFTlYBeNjSszcq6zwhFXaN/Belttt-5000W-12VDC-to-220VAC-Big-Power-Inverter-Modified-Sine-Wave-Solar-Power-Inverter-China-Manufacturer.jpg",
+                     "https://www.jonchan.com/uploads/AVR-1500W2.jpg",
+                     "https://bdkoo.com/assets/images/product/kstar-1200va-ups-offline-dSVYJjoSm4Z1_0.png",
+                     "https://www.nfdqchina.com/uploadfiles/128.1.164.27/webid893/source/202409/10191217254992027.jpg",
+                     "https://www.shdrcap.com/data/watermark/20220610/62a2f65b2e8f1600_447.webp",
+                     "https://s.alicdn.com/@sc04/kf/Hb272674c3b7c4ce890804c15adb63a41H/Round-Pure-Copper-Ground-Earthing-Rod-Copper-Earth-Rod-for-High-Voltage-Protection-and-Grounding-System.jpg_300x300.jpg",
+                     "https://www.powerandcables.com/wp-content/uploads/2017/04/Earth-Clamps.jpg",
+                     "https://m.media-amazon.com/images/I/71gS5GCIZwL._AC_UF894,1000_QL80_.jpg",
+                     "https://metalegypt.org/wp-content/uploads/2024/04/11.png",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJbRYSU6aEgOzCEL1hRcyZYniLxG3kgkNwGw&s",
+                     "https://s.alicdn.com/@sc04/kf/H99bcb61f71ce4736b4cd65f53f81d6149/OEM-Self-Locking-Nylon-Zip-Tie-9-450mm-Eco-Friendly-Plastic-Cable-Fastener-from-China-Factory.png",
+                     "https://s.alicdn.com/@sc04/kf/H03c5b600c04e4991ba0e7e3c40fa3285D/Electrical-Wiring-Accessories-Flat-Nail-Clips-PE-Material-Round-Plastic-Wall-Cable-Wire-Clip.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H6490794195a941f88c0722734ea67902D/Wholesale-Price-Panels-Mono-Crystalline-Photovoltaic-Solar-Panels-From-China.png_300x300.jpg",
+                     "https://cdn.globalso.com/risinenergy/MPPT-Solar-charge-controller.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX-d95oigAOnqbmFY_9mEx1vGD5YDfh3ddww&s",
+                     "https://s.alicdn.com/@sc04/kf/H7a98bcc139c446a88f7ad8ded7fa34eeq/DAQCN-China-Industrial-Mechanical-Timer-SUL181d-24-Hour-Time-Switch-with-16A-Max.-Current.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H22d33c3da2c44adbb2f3c0199b72b5c1J/12V-24V-DC-Car-Audio-Inline-Fuse-Block-Overload-Motor-Protector-12-Volt-for-Car-SUV-Marine-Circuit-Breaker-with-Manual-Reset.jpg_300x300.jpg",
+                     "https://cpimg.tistatic.com/5655073/b/4/china-intelligent-temperature-controller-hb101.png",
+                     "https://s.alicdn.com/@sc04/kf/H4e269a999a4c40ef884ee78ad9883fcfq/PC-Carton-PU-Transparent-Copper-Delivery-Straight-Joint-ROHS-Resin-Cable-Jointing-Kit-Cable-Protect-Europack-M10-M16-CN-ZHE.jpg_300x300.jpg",
+                     "https://www.wonkecontact.com/uploads/202317220/pt-2-5-1p-plug-in-connection-terminal-blockd472d8cb-c4ac-4bc3-a341-6797eab6b971.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJkuo4F9BP_DiSAo5ACROuwnef1am8pUkf8w&s",
+                     "https://s.alicdn.com/@sc04/kf/H9a295650e20d4892bcda4910c94d2551Y/Capacitor-Controller-380v-12-Step-Jkw58-Power-Factor-Regulator-Pfr-Power-Factor-Regulator-Controller.jpg_300x300.jpg",
+                     "https://image.made-in-china.com/202f0j00TIUEgraJBthq/Panel-Meters-SF-96-.webp",
+                     "https://www.cnkasan.com/upload/7056/image/20241218/3ce87baeb1696fde51517c67578c6cc4-hafa69fe92244481abd008cf8b4aec392t-quality-close-512226.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf47c551ab0624fcdb74fd93b6e4f5a1bw/227160699/Hf47c551ab0624fcdb74fd93b6e4f5a1bw.png",
+                     "https://s.alicdn.com/@sc04/kf/H8083e7b19c9d4b5796bc25ee60092294G/J-Series-Cutouts-J-Type-Fuse-Holder-base-Carrier-CE-Certification.jpg",
+                     "https://iprorwxhmnjjlm5p.ldycdn.com/cloud/jnBpjKrilpSRjkijmiqojo/QQtupian20231108153303.jpg",
+                     "https://sc04.alicdn.com/kf/H4d4ba37da07d4ea0880e3d65fc396d74T.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hdeaea886612b42ae814519719ccc2d9cU/C013-DC-42-Inch-Ceiling-Fan-with-Light-Kit-with-Remote-Control-42-Inch-Ceiling-Fan-with-Light-Kit.jpg_300x300.jpg",
+                     ""
+                 ]'>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYfT4iswCyYoUUeDs1zyTwd4R6bKKPCNVVkg&s" alt="Electrical materials">
+                <div class="card-content">
+                    <h3>Electrical materials</h3>
+                    <p>High-quality electrical materials for all your construction and installation needs.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+             <div class="product-card" 
+                 data-name="Lights"
+                 data-gallery='[
+                     "https://img.kwcdn.com/product/fancy/742942d1-07b6-41d6-bf76-b2ecdeefff99.jpg",
+                     "https://img2.tradewheel.com/uploads/images/products/9/4/home-decoration-pieces-metal-home-decor-led-lights1-0668995001553658378.jpg.webp",
+                     "https://img.drz.lazcdn.com/static/pk/p/ff841580116ca9f72369b8425b0ce4b2.jpg_960x960q80.jpg_.webp",
+                     "https://s.alicdn.com/@sc04/kf/Hd991ee92eb2a4e2986bc754a41a280d0h/Indoor-Luxury-Design-Decorative-Living-Room-Home-Modern-LED-Crystal-Wall-Lamp-Corridor-Bedroom-Bedside-Wall-Light.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H113c8bfae8b6453abd2cabe3913293857/Nordic-Style-LED-Chandelier-Restaurant-Home-Bar-Table-Cafe-Pendant-Lights-Online-Celebrities-Favorite-for-Middle-Living-Room.jpg",
+                     "https://image.made-in-china.com/365f3j00caDhBMZjkSpy/High-Quality-Waterproof-Chinese-Solar-Lights-for-Pure-Garden-Parking-Lot.webp",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdG92jZPilSxSTQnyiuZE91og72HORb6_Ag&s",
+                     "https://image.made-in-china.com/365f3j00dMSavBeGZTcY/China-Wholesale-54X3w-RGB-3in1-Indoor-PAR-LED-Stage-Lights.webp",
+                     "https://image.made-in-china.com/43f34j00EHdcolCGgQbV/SKD-LED-Bulbs-Price-List-5W-10W-15W-20W-30W-40W-50W-60W-E27-B22LED-Bulb-Driver-Holder-LED-Bulbs-Raw-Material-LED-Bulb-Lights.webp",
+                     "https://5.imimg.com/data5/SELLER/Default/2023/6/313842977/DZ/PA/HZ/63096112/rechargeable-led-torch.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H10219d010dc24160a6e49b1d52a5dda51/China-Manufacturers-1200W-High-Power-Integrated-ABS-Waterproof-Ip65-Led-Solar-Street-Light-with-Sensor-for-Road.jpg_300x300.jpg",
+                     "https://image.made-in-china.com/43f34j00dZUvgjfKMCqk/Smart-LED-Swimming-Pool-Underwater-Light-115-Wide-Angle-RGB-White-APP-Control.jpg",
+                     ""
+                 ]'>
+                <img src="https://contenu.nyc3.digitaloceanspaces.com/journalist/03489324-8206-4d73-882f-b0cae4504761/thumbnail.jpeg" alt="Lights">
+                <div class="card-content">
+                    <h3>Lights</h3>
+                    <p>High-quality LED,decorative and stage lights for your home, office and stadium.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+             <div class="product-card" 
+                 data-name="Music and sound instruments"
+                 data-gallery='[
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPXCKFzB96Bbx78-W08t8Lv6SFIJE5NHaLw&s",
+                     "https://image.made-in-china.com/202f0j00OJuEdTrGEmck/Grand-Piano-210cmheight-Classic-Black-Grand-Piano-Upright-Piano-Manufacturer-in-China.webp",
+                     "https://static.roland.com/assets/images/products/gallery/vad716-ge_front_gal.jpg",
+                     "https://image.made-in-china.com/202f0j00jVyzOCqGimcA/China-Factory-Cheap-Electric-Bass-Guitars-Good-Quality.webp",
+                     "https://s.alicdn.com/@sc04/kf/H71400bf8d7314077ba20008566545b2bU/High-Quality-D-150-Customized-6-Strings-with-24-Frets-Glossy-Basswood-Body-Spruce-Material-Solo-Electric-Guitar-for-Music-Use.jpg",
+                     "https://image.made-in-china.com/365f3j00jdkhAqPJPHcV/China-Guitar-Manufacturer-High-Quality-Acoustic-Guitars-for-Musical-Instruments.webp",
+                     "https://s.alicdn.com/@sc04/kf/H4718d45064a24d24a5c95f722873bbf7Q/China-Handmade-Violin-Full-Size-Acoustic-Violin-Instrument-Professional-Violin-4-4-for-Sale.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5ef30a7be95345668f0e5548951277c3u/Professional-Trumpet-Import-Wholesale-Complete-Set-of-Musical-Chinese-Instrument-Brass-Band-Instruments.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Habc37694f9304ad5b72429085fbce57cb/Professional-EB-Flat-Saxophone-Mic-Stand-with-Midway-Gold-Lacquer-Nickel-Plated-With-Hard-Case-and-Accessories-Reed-OEM-on-Sale.png",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2J1Qx_intnk8oFN6S2DYN5bOFZLHPJjAlJg&s",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSczZAKbq4hJHKqwxsUWJoUlZ4PMop1fQaXw&s",
+                     "https://s.alicdn.com/@sc04/kf/H69af85e0f69a4dbf83e364974979caf77/Chinese-Good-Quality-4-Channels-Handheld-Mic-Wireless-Microphones.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3dd0d07942b94069b10dbf377aab1b74S/4-Channel-1100W-High-Power-Class-H-3U-Linear-Digital-Stereo-Metal-Eco-Friendly-Chinese-Power-Amplifier-for-Stage-Performance.png",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj3HcCqH3Lc1PAKc1Lgl8FM-94z9ZTtc1Euw&s",
+                     "https://s.alicdn.com/@sc04/kf/H506336fb01624ce193dbd001350e0507r/High-Quality-Portable-for-Bluetooth-Speaker-with-RGB-LED-Lighting-Mini-Loud-Speaker-Outdoor-Speaker.jpg_300x300.jpg",
+                     "https://image.made-in-china.com/43f34j00GDpCYzjsEAkK/High-Quality-Powerful-Wireless-Portable-Bluetooth-Speaker-Ipx7-Waterproof-Wireless-Stereo.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H62cbb849ccfe410794346dfffad46d240/Factory-Price-Male-Plug-Speakon-to-Speakon-Audio-Speaker-Cable-2-2.0mm-Professional-Gig-Extension-Wire-for-PA-DJ-Studio-Stage.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H27863d9a4f1d44e291354d34effdf1c78/China-New-Speaker-Refit-Cable-Electrical-4-6-8-10GA-Pure-Copper-PVC-Car-Audio-Power-Cable-Wire.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hfc8f51c4b679481e9e48cb062e905fceJ/Professional-8pole-Speakon-Connector-8pin-Jack-Audio-Adapter-Twist-Lock-Audio-Male-Speaker-Cable-Plugs-Conector-De-Altavoz.png_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrIg1SrUFcE5L5yl7SGlZxSUMaaKRP6_Myeg&s",
+                     "https://s.alicdn.com/@sc04/kf/Haa605e4b507d4dcea969d234923a4ff7T/SINUSLIVE-Xlr-Microphone-Cable-Nickel-Plated-Xlr-Connector-Balanced-Microphone-Cable-Mic-3Pin-XLR-Audio-Cable-Male-to-Female.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwOxZQQCEs6zvBvZVNz8vcMrKvU3z8OBT5xg&s",
+                     "https://melodicamusicstore.com/cdn/shop/files/1_80f121ae-6e21-46e3-a166-f0a69d907bcf_large.png?v=1734950914"
+                 ]'>
+                <img src="https://img.freepik.com/premium-vector/set-musical-instruments-stacked-together-banner-with-different-types-musicain-instruments-band-orchestra-flat-design-poster-classical-jazz-pop-music-vector-illustration_345238-624.jpg?w=360" alt="Music and sound instruments">
+                <div class="card-content">
+                    <h3>Music and sound instruments</h3>
+                    <p>Explore our wide range of high-quality musical instruments and accessories for all your creative needs.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+
+             <div class="product-card" 
+                 data-name="Fashion"
+                 data-gallery='[
+                     "https://s.alicdn.com/@sc04/kf/Hd50cd242a11941ef8928a9d1a7c1d259l/Wool-Black-Single-Breasted-Plus-Size-Men-s-Suits-High-Quality-Official-Men-s-Tuxedo-Suit-Wedding-Men-s-Suit.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H93ae72f7fd5344fb9c90d21e96d8f489V/Striking-Black-Formal-Suit-That-Masterfully-Blends-Western-Tailoring-with-Eastern-Design-Elements-Single-breasted-Jacket.png_300x300.jpg",
+                     "https://image.made-in-china.com/43f34j00TszkHQDcqWgl/Handcrafted-Men-s-Wedding-Suit-with-Embossed-Shawl-Lapel-Single-Button.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc9d515caef5b483e96224f804bf77001x/MTM-Fit-Bespoke-Suit-2-Piece-for-Men-TR-Fabric-Coat-Pant-Wholesale-Single-Breasted-Men-Stylish-Clothing-Business-Suits-Set.jpg",
+                     "https://image.made-in-china.com/43f34j00DKocQkfsASgZ/High-End-Men-s-Clothing-100-Wool-Black-Formal-Suit-Men-s-Tuxedo.jpg",
+                     "https://img.kwcdn.com/product/fancy/394e1328-89a3-497e-b1c1-e930ad2c1012.jpg?imageView2/2/w/500/q/60/format/webp",
+                     "https://s.alicdn.com/@sc04/kf/Hca5a97eef17043b5ae1574a67fc2dcc4w/Formal-Luxury-Man-Suit-Made-in-China-Black-Slim-Fit-3-Piece-Men-Suit-Business-High-Quality-Men-s-Suits.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2f74f401361b449b88f59b619a1e51bdW.jpg",
+                     "https://sc04.alicdn.com/kf/Haee0fcbcc0874b8ebe32399def490fe1e.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGRC030HTh26yqeYLEygFupbcSjbxopHkrkw&s",
+                     "https://s.alicdn.com/@sc04/kf/H8a0acd834eb94ff397ad9d2a36c3c5feu/Grey-Double-Breasted-Classic-Men-Suits-Tailor-Made-Wedding-Tuxedos-Terno-Masculino-Business-Suits-Men-2-Pieces-Blazer-Pants.jpg_300x300.jpg",
+                     "https://sc04.alicdn.com/kf/Hc43af2463d7a4b46ac48d0c6e14e59315.png",
+                     "https://s.alicdn.com/@sc04/kf/H5baf1b7e0cbe41a8971933df1a33c2ffl.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha6610291b6484a389221c79705cb0367A/2026-New-lb-Mens-Suits-Regular-Fit-2-Piece-Suit-for-Men-Wedding-Prom-Business-Formal-Suit.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf082400abbee4299bf14e2b84fadfcc1D/Y8211-Custom-Business-Suit-for-Men-Two-Piece-Set-Long-Sleeve-Double-breasted-Slim-Fit-Formal-Suits-Grooms-Wedding-Suits-for-Men.jpg",
+                     "https://sc04.alicdn.com/kf/H4bbf80ee8fda42aa895da66e1ffa5a3aN.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0643d1972bcb4c1b895d72a83e335562Z/British-Style-Suit-Men-3-Pieces-Business-Suit-Jackets-Double-Breasted-Closure-Buttoned-Wedding-Dress-XL-Costumes-Pour-Hommes.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H36d4adfa877e47f1a7ffe663b26603db1.png",
+                     "https://s.alicdn.com/@sc04/kf/H116e07cf54f1489dacc9485b0a8bfb2fM/MS-24-Men-s-Long-Sleeve-Shirt-for-Business-Made-in-China.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc56dcdf00e6c4fa2b99f6775d2c0d14em/OEM-China-Factory-100-Cotton-Poplin-Solid-Formal-Shirts-Men-s-Dress-Shirt-Non-iron-Shirts.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hcb70717f6a034cb2bf9a851debddd358v/Wholesale-High-Quality-Polyester-Cotton-Formal-Uniform-Office-Shirt-Men-s-Dress-Dress-Men-s-Shirt-Business.jpg_300x300.jpg",
+                     "https://sc04.alicdn.com/kf/H5d50251c095e466c922c627e7f63ac40Z.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha8e0c4d8542343c282747495a46a6f9d5/China-Top-Grade-Wholesale-Mens-Clothing-Cotton-Dress-Shirt-Designer-in-Bulk-L006.png",
+                     "https://s.alicdn.com/@sc04/kf/Hb887e4ceee574692b896a3729ec1b842Z/OEM-MTM-Made-to-Measure-Custom-100-Cotton-Long-Sleeve-Classic-Men-Formal-Dress-Men-s-Shirt-for-Business-Made-in-China.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He594591355524bb19b598e87839b80efp/Men-s-Chinese-Shirt-Wholesale-Mens-Cloth-Shirt-Office-Wear-for-Men-1019.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H6dda06cd723f4b51bb1f798c05998feeQ/White-Blue-Pink-Black-Men-s-Shirt-Long-Sleeve-Classic-Men-Formal-Dress-Shirt-for-Business-Mens-Clothing-Shirts-China-Cs259.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H371a0c8144a5449f9ebdb9799becd5daO/China-Factory-Accept-OEM-Customization-High-Quality-CVC-Long-Sleeve-Striped-Formal-Old-Men-Dress-Shirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf262ac87b5fe49db9750b1da1a47a10aX/China-Manufacturers-White-Professional-Formal-Business-Shirt-Mens-Luxury-Stretch-Non-iron-Anti-wrinkle-Shirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1a5934a7ea93459b9ef06115deb8c117x/Customized-Men-s-Comfort-Premium-Quality-Denim-Shirt-for-Spring-Autumn-High-Quality-Product.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8699f465be60422fbf09b6cbe4975bc9o/Made-in-China-Men-s-Long-Sleeve-Printed-Shirt-Retro-Slim-Business-Formal-Shirts-Wholesale.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2a8e0f4261a6409f84962b1c837d60135/Custom-Made-Casual-Denim-Shirts-for-Men-Wholesale-with-Pearl-Snap-Button-Breast-Pockets-Long-Sleeve-Acid-Washed-Men-Social-Shirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/A64430f7491c74d148f6935c5ac8854a3j/High-Quality-Men-Jeans-Spring-Autumn-Casual-Shirts-Long-Sleeve-Single-Chest-Pocket-Point-Collar-Denim-Shirts-for-Men.jpeg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H578dde756fac41c392da76ceed869658w/Men-High-Quality-Street-Wear-Washed-Denim-Fit-Single-Breasted-Jacket-Shirt.jpg_300x300.jpg",
+                     "https://sc04.alicdn.com/kf/Hb7c122d0673c4f8a84842480980daad9V.jpg",
+                     "https://sc04.alicdn.com/kf/H34852cfa95e24e2283506062dc74667ej.jpg",
+                     "https://sc04.alicdn.com/kf/Ha602eaaca9514bafab8fc9d89e2a85d1R.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H931c9fd127364a89a6bee2353f23084eK/Custom-Design-Vintage-Oversize-Men-s-Denim-Shirts-High-Quality-Washed-Denim-with-Patched-Pockets-Plus-Size-Vintage-Jeans-Shirts.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H4e367c2a709c4172b5106d8aeec87249W/Summer-Vintage-Denim-Cropped-Boxy-T-Shirt-Men-Streetwear-Casual-Multi-Pockets-Acid-Wash-Jeans-Shirt-for-Men.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H442879559d5b40689ea6fd9352b430f5w/Chinese-manufacturing-companies-Custom-T-Shirt-Polyester-Custom-Polo-Shirt-Embroidered-Logo-Men-s-Polo-Shirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/A819864b21dc34f4d96d33e0844cec6fdI/OEM-BD-China-Factory-Price-Men-s-Quick-Dry-for-Summer-Breathable-Collared-Ice-Silk-Fabric-Plus-Size-Factory-Price-Polo-T-Shirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H9af784778d8e4a6abc8d2f90a0a26cedW/High-Quality-100-Cotton-Men-s-for-Polo-Shirts-Custom-Made-with-Basic-Style-220-Grams-Weight-Solid-Color-Breathable-Fabric.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Aca7304d1467a4762a0ea90a1698ebcb40/OEM-China-Bangladesh-Factory-Price-180g-50-Cotton-Unisex-Cotton-Oversize-Short-Sleeve-Basic-SolidColor-Loose-Fit-Blank-T-Shirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H059d36a3f00445b5acb4ede9fb367352E/Hot-Sale-Unisex-Soft-Plain-China-Sports-Clothing-T-shirt-Manufacturer-Custom-Men-s-220GMS-TShirts-100-Cotton-Custom-T-Shirts.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hcc5460afad414b1cb0693e1a98b6684f0/Wholesale-China-Customized-Round-Neck-Short-Sleeve-Printing-T-Shirt-Custom-Printing-T-Shirts.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0300a9d1b58a4195b3671e6b337c74b1r/China-Factory-Wholesale-Price-High-Quality-Cotton-Mix-Polyester-Work-Out-Short-sleeved-Casual-Men-s-Plain-Black-Golf-Polo-Shirts.jpg_300x300.jpg",
+                     "https://sc04.alicdn.com/kf/H10e410c235c14382ad2c644b34548a35C.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB1EtbjbRWD3KVjSZKPq6yp7FXaN/Online-Shopping-China-Clothes-100-Cotton-Mens-Slim-Fitness-t-Shirts-Manufacturers-China-Custom-Printing.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5411dd843a924dfb8c528192b76c9e3bX/Vintage-Hawaiian-Color-Tiger-Print-Chinese-Cardigan-Oversized-Summer-Shirt-for-Men.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H26dc706cb14e468fbb11ca256f7fe1450.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H804ff9fd4f074032a5a506aab62007179/Plus-Size-Plain-Blank-Unisex-Black-T-Shirts-100-Cotton-Oversized-Custom-Mens-Long-Sleeve-T-Shirt.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7vBFbE1YwBf-lv1QDOQyVjw0uAq6BlOBY5w&s",
+                     "https://s.alicdn.com/@sc04/kf/H24703dde07514409985fbb5da4137d336/2025-Men-s-Leather-Jacket-Korean-Style-Slim-Fit-Fashionable-Fleece-Lined-Thickened-Motorcycle-Jacket-for-Spring-Autumn-Winter.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H7becb3b66e134c86beb3e1435f0e075fB/China-Apparel-Best-Quality-Motorcycle-Jacket-Mens-Leather-Jacket.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H837d95c67950409fa14e17e9a59f4621w/Liu-Ming-Korean-Fashion-Wholesale-Men-Slim-Casual-PU-Coat-Zipper-Stand-Collar-Windproof-Plus-Size-Leather-Jackets.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H26d081e3958c4a8289964c3b4a31cf51S/Wholesale-Top-Quality-Norths-Winter-Down-Coats-Puffer-Jackets-Outdoor-Men-s-Clothing-Luxury-Designer-Brand-LOGO-Jacket-for-Men.jpg_300x300.jpg",
+                     "https://image.made-in-china.com/43f34j00DyfoQnJghvza/Custom-Fashion-Winter-Jacket-Men-s-Best-Oversized-Black-White-Blue-Gray-Waterproof-Windproof-Windbreaker-Down-Duck-Down-Jacket.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H9d6704756b9e4af8aac45488adaf543di/Factory-Wholesale-Men-s-Jacket-Trendy-Brand-Stand-Collar-Jacket-Warm-Customizable-LOGO-Outdoor-Jacket-for-Autumn-Winter.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/A69c4df4406e3447ea9ec75914c075f0eX/PASUXI-Men-s-Hooded-Casual-Warm-Cotton-Jacket-Thickened-Fleece-Lined-Zipper-Front-Parka-Winter-Cold-Proof-Quilted-Coat.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hbc5acbf0c47d4b5aa49255e2680c5ba5I/Wholesale-China-Cheap-Price-Custom-Outdoor-Mens-Fashion-Jackets-Custom-Windproof-Puffer-Jacket-Clothing-Windbreaker-Winter.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3cc0d5d3fe434b188d3d2f8a2c696b41O/Jacket-Manufacturer-Men-Wholesale-Custom-logo-Waterproof-Outdoor-Jacket-Winter-Jackets-for-Men.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC6v8_N78I1Zis4cD2Q-yzejR6OcAKydYdzPwrvWed0g&s",
+                     "https://s.alicdn.com/@sc04/kf/H6c96c4970c8d4bac8aea926a6023cfcaz/Fashion-Water-Resistant-Ski-Snow-Hoodie-Wind-Breaker-Jacket-Warm-Winter-Women-s-Sport-Jackets.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0dbf3be2b278403d871c9635301e3d09z/Custom-Logo-Wind-Breaker-Jacket-Outdoor-Men-Waterproof-Windproof-Jacket-Custom-Windbreaker-Jacket.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb850b5c4fb434975a4a5054abb481cdbK/Winter-Women-Coat-Parkas-Mid-length-Hooded-Padded-Jacket-Big-Fur-Collar-Warmth-Jacket-Cheap-Wholesale.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Had31a907cd3346b4a6c8a9b038266247X/Winter-Fashion-Women-Fur-Collar-Hoodie-Long-Parkas-Quilted-Jacket-Ladies-Warm-Puffer-Coats.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPw38v0SEW0dwXlw1bYusCBAVlVvJtJSTyAQ&s",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQz-09Z0wi7Oq8ca-2V2oHLud8MCcgnyJTA&s",
+                     "https://s.alicdn.com/@sc04/kf/Hd7c0e73ee43e4240864ce5d9169d82af9/Custom-Christmas-Sweater-Fluffy-Fancy-Sets-New-Pocket-Cashmere-Cardigan-Women-s-Knitwear-Fashion-High-Knits.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc862c5d1ae3f4d26a03d791c1c6584cd1/Spring-and-Autumn-China-Elements-Chinese-Red-Straight-Slim-Casual-Long-Sleeve-Turtleneck-Round-Neck-Men-s-Knitted-Sweater.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H941b64f1c3ef4107861c4d845e472e8fY/Chinese-Sweater-Manufacturer-Hot-Selling-Crew-neck-Knitted-Sweater-430g-Plus-Size-90-Wool-10-Cashmere-Sweater-for-Autumn.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hd3d863a242044aa7b8029c1d54b3c4649/Chinese-Best-Sweater-Factory-Wholesale-Custom-Long-Sleeve-Knitted-Sweater-Low-Price-O-neck-Lyocell-Sweater.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3fa87bdfa84242baacd143b0ac8b1c272/OEM-Service-Wholesale-Trending-Autumn-Winter-Men-Clothes-Casual-Turtleneck-Pullovers-Long-Sleeve-Knitting-Warm-Sweaters.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1780147c7b9a4acd90dc24945aef8da2Q/Crewneck-New-Summer-Unisex-Men-s-Cotton-Embroidery-Label-Twist-Pullover-Sweater-Retro-Full-Sleeve-No-Logo-No-Pattern-Made-China.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1565abca941d4838b334d24df93fa0b0T/Polo-RL-Custom-Pullover-Pria-Wool-Neck-Crew-Knit-Cable-Cotton-Manufacturer-Casual-Men-Knitted-Ralphes-Men-s-Sweaters.png",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr9n120rHX6taLbfZCW-Hx40dXqrjH0TTzbw&s",
+                     "https://s.alicdn.com/@sc04/kf/Hca82c1d4fa314437a5b94450248294cbx/Winter-Men-Turtleneck-Knitted-Sweater-Casual-Flower-Warm-Undershirt-Color-Pullover-Clothing-Outwear.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H266e566f2f29478ca32eac66b01af9f8a/High-Quality-Mens-Gym-Vest-Top-Mens-Gym-tank-Top-Custom-logo-Muscle-Fit-Ribbed-Vests-Ribbed-Vest-Men.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/A151cb4bbaaec4bd7ab3e8fc821a82a32A/Quick-Dry-Polyester-Knitted-Summer-Sports-Seamless-Men-s-Marathon-Breathable-Custom-Race-Singlet-Running-Gym-Tank-Top-Chinese.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrvypNPySAcKrZ4SkB2gu8TEup3ufKPoHjzg&s",
+                     "https://s.alicdn.com/@sc04/kf/H5f4e327a10d945a7bebd333de32e0ff9C/High-End-Summer-Men-s-Sleeveless-T-Shirt-60S-Lenzing-Modal-Casual-Style-Thin-Ice-Silk-Seamless-Inner-Wear-Solid-Color-Vest.png",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFQm6U2HUbBydzkmavYkbBXd26wsDUTuFMgQ&s",
+                     "https://s.alicdn.com/@sc04/kf/Ha009e7935a984477a52c6c235b52710b5/Men-s-Summer-Sports-Shorts-250g-Chinese-Cotton-Loose-Casual-Pants-Drawstring-Mid-Solid-Street-Fashion-Styling-Knitted-WORSTED.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5bb5884b133045afbca53d2a05d610395/Summer-Chinese-Cotton-Street-Wear-Gym-Drawstring-Shorts-Sweat-Men-s-Summer-Knitted-Women-Sport-Running-Pants-shorts.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H201cc32bebe24f1ea4a3571a2e08e1229/Custom-Made-Acid-Wash-Men-s-Shorts-New-Style-Mid-Waist-Zipper-Fly-Woven-Hot-Shorts-in-Solid-Colors-Made-in-Pakistan.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H06e67c85fdfc402ba27a3163d62bee99U/234840667/H06e67c85fdfc402ba27a3163d62bee99U.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0e1d93c322bc4ce1ab046007cfbdbf3aL/Sports-Shorts-Sexy-Muscles-Brothers-Run-Basketball-Training-Breathable-Fitness-Shorts-New-Summer-Style-Thin-Section-Mesh-Men-OEM.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H42e259bfa7d24400b1e4b115308b1a5fT/278042312/H42e259bfa7d24400b1e4b115308b1a5fT.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H58fb5c43607e49d6b1ab3f7c47107043q/Wholesale-Branded-Shorts-Men-Classic-Fit-Custom-Cotton-Shorts-Plus-Size-Shorts-in-Factory-Made-for-Boys.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2ab4326ea51e468ca131443d06fb20e4T/China-Factory-Wholesale-90-Polyester-10-Spandex-4way-Stretch-Men-s-Beach-Shorts-Board-Surf-Shorts.jpg_300x300.jpg",
+                     "https://p16-oec-general-useast5.ttcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/18f35d3798764b9da3e267dd90afaa26~tplv-fhlh96nyum-crop-webp:600:800.webp?dr=12190&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=948674b7&idc=useast5&from=2378011839",
+                     "https://s.alicdn.com/@sc04/kf/HTB1aavzdOQnBKNjSZFmq6AApVXaE/Chinese-Factories-Sell-Good-Shorts-at-Low-Prices-You-Can-Customize-Stretch-Shorts-MMA-Mixed-Martial-Arts.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEI_lH4B8puRH1srAAamj8gyLYYXABp_wGQ&s",
+                     "https://s.alicdn.com/@sc04/kf/H05337fb88b5c414b955197220ba8af450/F6-Used-Brand-Shorts-Second-Hand-Branded-Pants-Ukay-Bales-Clothes-Cotton-Summer-Clothing.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H7645d96babde459d8a287a1ef214ef21D/Shorts-Cargo-Elastic-Waistband-Knee-Length-Washed-100-Cotton-Chino-Bermuda-Camouflaged-Short-Pants.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Heff709dc0c9a44259dde838ec1926419z/Wholesale-Below-Knee-Length-3-4-Long-Shorts-Men-s-Tactical-Capri-Pants-Multi-Pocket-Summer-Twill-Work-Cargo-Pants.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrVZBcch3sPtLpdnSCoa6A8TRy0j3Y3gEuLA&s",
+                     "https://s.alicdn.com/@sc04/kf/H8314f801809c4376b333e10a57aadd876/Custom-Logo-Classic-Comfortable-Modal-Men-s-Underwear-Chinese-Factory-Mid-rise-Briefs-Shorts-Boxers-Breathable-Classic-Design.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5a9f92ba67514f8483d1b59faeb8eb38H/High-Quality-Cotton-Arrow-Pants-Anti-chafing-Leg-Men-s-Underwear-Home-Outdoor-Shorts-Boxer-Briefs-Chinese-Factory-Wholesale.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hdbaa22365ebf4e7491e9000abe8d6d6al/High-Quality-Boxers-Ice-Silk-Arrow-Pants-Men-s-Underwear-Summer-Boxers-for-Men-Men-s-Boxers-Chinese-Factory-in-Stock-Wholesale.jpg_300x300.jpg",
+                     "https://image.made-in-china.com/2f0j00DVUBiorFfKqM/Classic-Cotton-Underpants-Underwear-Boxers-for-Men-Mboxa0081.jpg",
+                     "https://image.made-in-china.com/43f34j00AWqCcHUBMokK/Custom-Logo-Comfortable-Anti-Bacterial-Gym-Sports-Shorts-Underwear-Boxer-for-Mens.webp",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmeylT74DxCz7ZhPK6GBf7SvekSE-17Cd3FQ&s",
+                     "https://s.alicdn.com/@sc04/kf/H1d2f1f10a0444b43bbd9f092a0868e94j/Cheapest-China-Wholesale-Used-Underwear-Plus-Size-100-Cotton-Men-Boxers-Underwear.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB1wMFNas_vK1Rjy0Fo760IxVXad/Import-China-Wholesale-Cotton-Men-Woven-Boxer-Shorts-Comfortable-Cotton-Linen-Boxers-Man-House-Wear-Boxers-for-Sale.png_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaqbA3vwQ4rpBZE54DvjRTWcxbCcKMzyHzQA&s",
+                     "https://s.alicdn.com/@sc04/kf/Ha0db4a0cf1554ba297779925e815b133m/Persian-Pattern-Luxury-Brand-Vintage-Classic-Design-Mens-Microfiber-Handmade-Gray-Red-Navy-Floral-Neck-Ties-for-Men.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5b602ba20e614d6abc891bf2b2b4eb0aT.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H53949043ee094fe2923e672c94d5cb0c6/High-Quality-China-Polyester-Neckties-Supplier-Wholesale-Designer-Silky-Neckties-Neck-Tie-Silk-for-Mens.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB14y4GLVXXXXcBXFXXq6xXFXXXN/Manufacturers-in-Stock-Wholesale-Low-Moq-Stock-8cm-Mens-Chic-Silk-Tie-Neck-Tie-With-Box-Set.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hffd104565904423dad755f4faae3fadbu/Chinese-Patterned-Elegant-Business-Men-Standard-Necktie-Christian-Wool-Silk-Tie-for-Men.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HLB1br6NScfpK1RjSZFOq6y6nFXaC/China-Silk-Ties-Jacquard-Silk-Ties-Mens-Silk-Ties.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1c7d5e28f95e4d52af32e3392d5fae1aM.png",
+                     "https://sc04.alicdn.com/kf/H166061cb5db94e70b960810c0450d774Q.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H428cf98bacaa46df8ec63c4bac21e7daM/China-Alibaba-Factory-Elegant-Dresses-2025-pink-Dresses-Women-Lady-Elegant-Fashion-Dresses-Online.jpg",
+                     "https://sc04.alicdn.com/kf/H4052db182f16445d9742645f10339b73X.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha698c6c00a1e4fadb47496a39d832feeY.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He906ad8a8cab4644990752b80df20ccdR.jpg",
+                     "https://sc04.alicdn.com/kf/Hdc65ce7c7bab42758b60cad53d9e50d9o.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTol0y9r-SkrctbTO0QvAH7OSGETn3YUP34eg&s",
+                     "https://sc04.alicdn.com/kf/H524ec3713d1b421583bae29b2b10b3f5U.jpg_350x350.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H366df8f112124de4be26d2c6ef7ccf8dp/African-Wedding-Party-Dresses-for-Plus-Size-Women-Long-Wedding-Party-Dress-in-Turkish-Style-Elegant-Night-Dress-with-Sequins.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBdGBvzWOyk44TPlKhaW68tLE5UtODV4oOn8GlPbjhDw&s",
+                     "https://s.alicdn.com/@sc04/kf/H684d7bf71aec4d5cb909cac42c7e37246/2024-Custom-Women-Bank-Clothes-High-Quality-Bodycon-Puff-Sleeve-Wrap-Dress-Satin-Elegant-Banquet-Formal-Midi-Office.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtU-CirUKqXvmfEWNTc1jQ8KWIIWawIAob7g&s",
+                     "https://s.alicdn.com/@sc04/kf/H7bd4b7a1f8234818a98a57a936ae8d32p/New-Women-Elegant-Pencil-Dress-Long-Sleeve-O-neck-Back-Slit-Dress-Spring-Autumn-Office-Lady-Commuter-Midi-Dress.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H97b9963d006b4ec6bade0671e35d7ab2R/Latest-Design-Career-Dresses-Women-Casual-Elegant-O-Neck-Puff-Sleeve-A-line-Ladies-Office-Dress-Church-Dresses-for-Women.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc735ba7d95b741d9abadf34d7f0d30976/First-Class-Holiday-Breast-Flower-Ladies-Shirts-Elegant-Short-Sleeve-Summer-Flare-Casual-Dresses-for-Women-Office-Wear.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0800567d01b14d0ebeedef68bdb93b4aI/2025-Spring-Vintage-Chinese-Dress-for-Women-Elegant-Pleated-Chiffon-Clothing-Custom-High-Quality-Manufacturers-Product.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf7e88ab543c8472ea3e5a312787b3031s/One-Size-African-Clothing-Women-Dress-Hanfu-Dress-Chinese-Traditional-Gradient-Hanfu-Skirt-Set-2-Piece-Skirt-and-Tops-for-Women.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwjblYUBv-1mFUz1tfFnYrwt2waSZ_mthhRg&s",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSez_5W2aPhwISp0RPnP7uvntbiJEkEtaBtDg&s",
+                     "https://s.alicdn.com/@sc04/kf/H5dd857d7603445d88d21319ff92f6325v/ZHEZHE-Summer-Spaghetti-Strap-Pleated-Long-Party-Dress-Women-Elegant-Sleeveless-Cut-Out-Backless-Maxi-Evening-Dress.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha084d9ed5e6240e19d86a3f9a2bcc692D/Europe-and-the-United-States-Senior-Lantern-Sleeve-Dress-Women-Fall-Tassel-Slim-Elegant-Casual-Long-Dresses.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5470e045d01a4d35b2e12265c8908782h/Women-Dresses-Clothing-New-Design-Solid-Color-Long-Sleeve-Maxi-Dress-Women-Casual-Dress.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR83EKLxUEEPIS5ZvKuTtDvunvtXBwZr3S3Bw&s",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2SXH1PZMwDRau-hvazBGeOauh1-DZekPjBg&s",
+                     "https://s.alicdn.com/@sc04/kf/H3a795f322a894f90a67be34c38f47f8bK/New-Design-Women-s-Fashion-Dress-Factory-Wholesale-High-quality-Loose-Casual-Dresses-Miyake-Pleated-Dresses.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hda295368c9d64a57a163bc02d9e0900cd/Miyake-Women-Pleated-Dress-Casual-Style-Irregular-Design-With-Loose-Plus-Size-Belt-Factory-Outlet-Fashion-Dress.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H6889ebf37e8a41f2900fea2940cdc750d/New-Dresses-2024-Layered-Dresses-Women-Lady-Elegant-Vintage-Pleated-Design-Dresses-Women-Casual.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H81aefdd6b02e47969e345c3848c191c8V/Women-s-Elegant-Dress-Factory-Direct-Sales-Solid-Color-Stretch-Irregular-Dress-One-Size-Polyester-Fabric-Casual-Women-s-Dresses.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H588b2487e8dc4916929ecf6c2853f6509/2024-Hot-Selling-Ladies-Casual-Pleated-Stretch-Loose-Round-Neck-Long-Sleeve-Pleated-Cake-Dress.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8ba66106e0784f139678d546a4f083e2J/High-Quality-Factory-Wholesale-Children-Clothes-Elegant-Knit-Body-Ruffle-Chiffon-Dresses-for-8-12-Years-Teenage-Kids-Girls.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb505123923514135bd0c625297c5e884w/Patchwork-Button-up-a-Line-Split-Flared-Long-Sleeve-Women-s-Dresses-Short-Black-and-White-Ruffle-Dress.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz1vt8fTp5rFW3Qhray1uAHKw_lfSWyqpZRw&s",
+                     "https://s.alicdn.com/@sc04/kf/Hb7338ef1884448baa86ae3feccf150aen/Hot-Selling-Gray-Beaded-Abaya-Dress-for-Women-Modest-Breathable-Polyester-4XL-5XL-Designed-for-Modern-Egyptian-Borkha-2pcs.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H088c766f799d4e66ab54988bf52c2197y/Hot-Selling-Gray-Beaded-Abaya-Dress-Modest-Breathable-Polyester-Egyptian-Borkha-Anti-Static-2pcs-Set-One-Size-Traditional-Muslim.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2ec7871f1bdb423c986b6819384fe7e2t/2026-Eid-New-Design-Jalabiya-Sequin-Long-Dress-for-Winter-Traditional-Muslim-Clothing-Elegant-Abaya-Dress.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNGI_l_PXOaFI2ZxMdxUyIvvxUTMHIVO2tw&s",
+                     "https://s.alicdn.com/@sc04/kf/Hfe903e3747474b719d159caaa8805a826/Printed-Embroidered-Polyester-Pullover-Long-V-Neck-Middle-Eastern-Women-s-Robe-Dress-Winter-2025-Party.png",
+                     "https://s.alicdn.com/@sc04/kf/Hd2f75cd12ac54a46bf981a167b1a0816T/SW1004-Summer-Cross-Border-Abayas-for-Women-Custom-Designed-Arabian-Dress-with-Leopard-Print-Diamond-Beading-XS-Size-for-Hijab.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8a82ae3d3eb0453cb70e42ebcf9e6bd4g/China-Clothing-Manufacturer-Custom-Design-Ladies-Cut-Out-Waist-Twisted-Crop-Top-and-Shirring-Skirt-Sleeveless-Knit-Dress.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb0406720cc424c7da65478bc89e84202N.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hcde920c912cf437d875b8bf78e0e563ci/Wholesale-Elegant-Solid-Strap-Women-s-Plus-Size-Casual-Sexy-Long-Dress-Cheap-Bodycon-Maxi-Dress.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpfnxXHT6CbUcaNpiJiR8LOb2kgy_jO-gxrg&s",
+                     "https://s.alicdn.com/@sc04/kf/H5e5d8ff980414167a58dbed1b7c5f639A/Wholesale-Chic-Halter-Neck-Deep-V-Color-Block-Print-Maxi-Dress-Belted-Flowy-Summer-Tropical-Party-Wear-Women-s-Casual-Dresses.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8dc0609946434c0494f6ba7380724202m/New-Fashion-Ankara-Clothing-for-Women-African-Long-Dresses-Kitenge-Dress-Designs-with-High-Quality.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1abfa58784144c2790929fba45c12ec6v/Wholesale-African-Clothing-African-Kitenge-Dress-Designs-Vestidos-Para-Mujer-Long-Sleeve-Maxi-Dress.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb2ee863308764d288d291a81f828acfeC/2025-New-Floral-Sexy-Ruffle-Bikini-Summer-Beach-Three-Piece-Set-Beachwear-Push-up-Swimsuit-With-Cover-Dress.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H88fe19b0d2bd496cbf9797cc8c7e6cb8U/TONGYANG-Women-Bohemia-V-neck-Sleeveless-Print-Ethnic-Beach-Boho-Long-Dress-Retro-Hippie-Boho-Dress.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Haa3f24f454e5463c8750e8d305515f883/Stripe-for-Women-Solid-Open-Back-Sexy-Summer-Dress-Women-Party-Slim-Dresses-Splicing-Dress-New-Fashion-Women-Clothes.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hbecfae0ca0b24759bf0f69cc852d526ag/Hot-Selling-High-Quality-Dress-Women-Chic-Style-Bandage-Ruched-Midi-Open-Front-Backless-Sexy-Dress.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H404cf8dce780437780df268b1bc1c424a.jpg",
+                     "https://sc04.alicdn.com/kf/H7f9b47849c3b4bfcbf26174e1d167058s.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hd1dff68e05484b6e89ec780d9048c85aq/Hot-Girl-Sexy-Slim-Side-Open-Fork-Dew-Leg-Halter-Skirt-Female-Summer-Tight-Wrap-Hip-Knit-in-Long-Section-Dress-Women-S-Skirt.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H19e09e92ac3c4dacbd171cf5578a5293S/Wholesale-Casual-Clothing-Dress-for-Woman-Custom-Logo-Girl-Strap-Beauty-Back-Desire-Spice-Girl-With-Skinny-Long-Skirt.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hfaa49a30720d4b94bb0c8e05cfdb22f5j/Loveda-New-Arrival-Women-Summer-Thin-Home-Clothes-Open-Back-Hollow-Ladies-Suspender-Nightdress.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc89b86002132494ca1cb3aa750dc9e90j/Women-Lace-Nightgown-Cotton-Chemise-Sexy-Lingerie-Dress-V-Neck-Sleepwear-Slips-Nightie.jpeg",
+                     "https://s.alicdn.com/@sc04/kf/H5ba795e1ca684781951474a78d74cf68b/High-End-Lace-Open-Back-Sleepwear-Sexy-Girl-s-Side-Slit-Suit-Women-Nightdress.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hbab4c5e9c3744f54be75904b7f0e6f01T/100-Polyester-Satin-Latest-Lace-pink-Dress-Silk-Satin-Nightgown-Women-New-Design-Sexy-Nighty-Girls-Night-Dress-Sleeping-Dress.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H56e92ca95dab4e58bb452eb9897c035cg/Manufacturer-Custom-Pijama-Ladies-Comfortable-Modal-Pyjamas-2-Piece-Sets-Bamboo-Viscose-Women-s-Pajamas-Sleepwear-Set-for-Women.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H81cd41e4bd7346e6a253d3791795abd1v/Hot-Selling-Cheap-Cute-Night-Sleepwear-Long-Sleeved-Pants-Lapel-Pajamas-Women-Love-Print-Home-Clothes-Women-s-Pajamas-Set.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8323796d27ef477a9ed1b5ff922a4d5by/New-Arrival-Plain-Satin-Teen-Girls-Sexy-Sleepwear-Nightdress-Chinese-for-Women-Pyjamas-De-Luxe.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hd39e48ba08dc4bf6ac1b16e1aa589412o/Short-Sleeve-Satin-Pajamas-Set-Spring-Summer-Women-Ice-Silk-Pijama-Sleepwear-Pyjamas-Plus-Size-5XL-Nightwear-Set.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha28a5807761d46d983c90aefbf9b6b529/New-Women-s-Summer-Lightweight-Short-sleeved-Long-Pants-Pajama-Set-with-Cartoon-Three-piece-Home-Wear-Set.png",
+                     "https://s.alicdn.com/@sc04/kf/H46aa29ee35b24ddaa1af91830697f2eeW/Pajamas-Women-Three-Piece-Set-Summer-Thin-Short-Sleeve-V-neck-Shirt-Loose-Pants-Lady-Cartoon-Print-Casual-Sleepwear-Suit.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H393ebb7e7856406cb7a0400105f465a6L.png",
+                     "https://s.alicdn.com/@sc04/kf/H9a9af01c4f104456a40615ce198acbff7/Fashion-Girls-Printed-Pajamas-Set-Loungewear-Women-Soft-Nightwear-Womans-Pyjama-Sets-Ladies-Breathable-Sleepwear-Nightgowns.png_300x300.jpg",
+                     "https://sc04.alicdn.com/kf/H92bc348423cc492c9710de408deea7deU.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hd8f09ec43d0644bfb315557abfd29b7dN/S2294L-New-Chinese-Style-Banquet-Temperament-Light-Luxury-Niche-Catwalk-Dress-Small-Tail-Banquet-Toast-Clothing-Evening-Dress.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H01638ee50c97460eb9e0880c2a3ec370o/Wholesale-Women-High-Quality-Embroidered-Floral-Lace-Applique-Wedding-Dresses-Custom-Traditional-Mermaid-Red-Cheongsam-Qipao.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He8d58df3e1fc423b8cfc0e235580b9dan/Ocstrade-Garment-Manufacturers-Customized-Luxury-Pink-Rhinestone-Sleeveless-Multi-Layered-Tulle-Train-Long-Prom-Evening-Dress.png",
+                     "https://s.alicdn.com/@sc04/kf/HTB1cbi1bjvuK1Rjy0Faq6x2aVXa6/Luxury-Sweetheart-Lace-Beaded-2-in-1-Bridal-Mermaid-Red-Wedding-Dress-With-Detachable-Train.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB1ddq7arY1gK0jSZTEq6xDQVXa7/China-Suzhou-Factory-Flower-Printing-on-Right-Left-Side-Wedding-Clothing-4-Dresses-Style-for-Chose-Premium-Cotton-Wedding-Dress.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf18cbca2639e4807a072a10a5f312616d/S2267N-2026-New-Queenly-One-shoulder-Purple-Floor-Length-Diamond-Annual-Birthday-Runway-Show-Host-Performance-Evening-Dress.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H04b13d87c5c949ffa93f6891835049adS/Pink-a-Line-Short-Sleeveless-Beaded-Feathers-Evening-Dresses-Serene-Hill-LA72351-Formal-Party-Gowns-for-Women.png",
+                     "https://s.alicdn.com/@sc04/kf/Hd22a1a8f24b94ecd856d93d8200e92f8b/PInk-Mermaid-Split-Open-Evening-Gowns-Serene-Hill-LA72314-Luxury-Beaded-Party-Dresses-for-Women-Wedding.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H72138ef95ff54ec2b54c9694c3f54b20s/New-Red-Fashion-Petite-One-shoulder-Wedding-Engagement-High-end-Evening-Dress-for-Women.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfdpe0855rjb0xYEVWTnkeGDpulE32hlXBQ&s",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqOdCYoUgkIL9Gt9gEaxcll9yC24u0dUx5Cw&s",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRStUWVwLlCAw1LDlPFNA3e0RobzG1ZIUwqEg&s",
+                     "https://s.alicdn.com/@sc04/kf/H68ea4eb062834da5a608ef40142b1530l/231862698/H68ea4eb062834da5a608ef40142b1530l.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H847d63163ea44b01afe9644a9faafb062/Elegant-Women-Clothing-Ladies-Tuxedo-Pant-Suit-Business-Formal-Women-Pants-Suits-Ladies-Tuxedo-Pant-Suit-Design-for-Women.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf003776987124cc4b2a5c77bedaf564dH.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0800ddfe27b04b27a75e43ed6972a5b8e/Girls-Business-Suit-OEM-2-Piece-Women-Business-Set-Multi-Color-Formal-Office-Lady-Pants-Uniform-Women-s-Work-Clothes-Women-Suit.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H6a0c8cfab6584e769a0939ab4b5404dbR/Women-s-Hotel-Manager-Uniform-Regular-Fit-Long-Sleeve-Business-Suit-Blazer-and-Pants-Polyester-Viscose-Spandex.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hee6b4639e13841d786536062a8de32ec6/Womens-Professional-Suit-Peplum-Skirt-Sets-Slim-Fit-Formal-Office-blazer-Business-Tailored-Pants-Female-Clothes-Ladies-Suits.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0c71647ea37a45efa893f6b0e27bba601.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H54fb4c135ce6428588b626ad8855bc30L/Fashion-Manufacturer-Long-Sleeve-Solid-Elegant-Girls-Top-White-Suit-Women-s-Set-Office.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H847a5dcc5d454c8a9fff7e71ee48e9d2R/alibaba-Factory-Wholesale-Plus-Size-Ladies-Formal-Suits-Ladies-Suits-New-Design-Ladies-Coat-Pant-Suits.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2776d3310c7444cd885bb3aafaec7653f.jpg",
+                     "https://sc04.alicdn.com/kf/He1b6aaf74ee849d2a14be406ca3b00c2e.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc0970c1543e841eaba2c1317c34f5d214/2025-Navy-Blue-Ladies-Slim-Spring-Summer-Suit-with-Cropped-Sleeves-Fashion-Tempered-Overalls-Women-s-New-Style-Blazers.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8f4212a315204841bf09eec301ed3569C/Factory-Price-Women-Fashion-Suit-Design-for-Office-Ladies-Uniform-V-neck.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H89428d740f6642e19d3b1672ba25aec2B/Latest-Desgin-Business-Suits-for-Women-Slim-Blazer-and-Pants-Set-for-Women-Formal-Suit-Ladies-Suits-Office-Wear.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Sbffec2e206fb48598ac6c4b2dace48f89/Spring-Full-Sleeve-V-neck-Elegant-Blouses-Women-Solid-Ruffles-Shirts-Ladies-Elegant-Tops-Clothes-Women-Wholesale.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hca356c22b2f94d94b8e830270f4f45c5x/Autumn-Full-Sleeve-Casual-Blouses-Women-Sequined-Shirts-Ladies-Casual-Tops-Clothes-Women.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc53515aec45f4233b7a5a5e9fbf7d47cM.jpg",
+                     "https://sc04.alicdn.com/kf/H027f6700e4fc44b2b1b109bc1f8888ffg.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H470b6537aa2b4573a1ca4fd0ddc22da4b/YiJiaYi-Short-sleeved-Women-s-Tops-Cardigan-Short-sleeved-Tops-Second-hand-Chinese-Wholesale-Short-sleeved-Tops.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H72a8e27643bf473aa05d3987f3b36c3aw/Wholesale-Second-Hand-Women-s-Crop-Tops-Mixed-Style-Short-Tops-Cold-Shoulder-Summer-No-Stains-All-Seasons-Ukay-Bales-High.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8dd08ae044f545678a0b6934b5db7ca3i/KungFu-KingAAA-Wholesale-Korean-Original-Used-Cotton-Blouse-Bales-Mixed-Ladies-Tops-Second-Hand-Clothing-45kg-Compressed-Bales.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0a29e3d11b2b461e974f2ea519524c36y/Geryon-Vintage-Secondhand-Ladies-Cotton-Blouses-Bulk-Ukay-Summer-Tops-Cropped-Shirt-Used-Clothes-Wholesale.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha0280365f5e04bcda071299be7e7e8a5f/Ladies-Tops-Europe-and-the-United-States-Style-New-Flower-Print-Loose-Lapel-Long-Sleeve-Fashion-Blouses-and-Shirts-for-Women.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H278557bb79b749629e0722281fe3f2edi/High-Quality-Pleated-Lapel-Chiffon-Long-Sleeve-Blouse-Women-s-Fashion-Tops.png_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgCuNoxjuwVRvSCmTpdNtf-njVs8lNVR-q7A&s",
+                     "https://s.alicdn.com/@sc04/kf/H39806a70b8484749a871f8f9154e27cfn/M7342-Spring-New-Design-Women-Chiffon-Shirt-Top-Printed-Long-Sleeve-Blouse-Woman-Shirt-Tops-Tees.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB12mBeKFXXXXXdXpXXq6xXFXXX4/EY0488B-Ladies-Clothing-Manufacturer-High-Quality-2015-New-Design-Chiffon-Ladies-Blouse.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5Ubl8l1iQ1RBHakG4nqFrM-SUP9fxJbQuA&s",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFcz3jXWLQaOpqRgeSMhDPk-GBIMHvMM6wA&s",
+                     "https://s.alicdn.com/@sc04/kf/Hc6c36193a1e8481eaf399b8c6080175f7/New-Design-Women-Half-Sleeve-Chiffon-Lace-Shirts-Girls-Korean-Button-Lapel-White-Tops-Simple-Loose-Blouse-Casual-Shirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2b4f38e0d93e496ea8811a8363f08c2cX/Vintage-Lady-Elegant-Hollow-Out-Long-Sleeve-Blank-Blouses-Female-Button-up-White-Office-Lace-Shirts.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0cda4d47ba4e4a3d9bdb0b3b8360a4bbp/Ladies-Elegant-Tops-Women-s-Casual-Fall-Blouses-With-V-neck-Long-Sleeves-Loose-Shirt.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H045c512da7004dcc8850c97f3117f029t/Women-s-Shirt-Long-Sleeved-Office-Silk-Satin-Shirt-for-Women.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb8002b2215984d7d971b2219b2ac06731/Manufactory-Custom-Style-or-Logo-ODM-Women-Elegant-Blouse-Long-Sleeve-Shirt-Women-Casual-Office-Lady-Gold-Buttons-Blouses-Top.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H97bf4f638deb46848914d070203f3f415/Autumn-Shirt-Vintage-Satin-Blouse-Button-Down-Women-Long-Sleeve-Silky-Shirt-Work-Office-Top-Ladies-Casual-Shirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3acc904ea9d642ce89495b1e354d9c52l/8950-Solid-White-Elegant-Office-Blouse-for-Women-Long-Sleeve-Satin-Fashionable-Top-with-Buttons-Necklace.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H722d1f2e3e3141d38f8aae148781ea30H/Loose-Midi-Short-Sleeve-Chiffon-Shirt-Women-s-Summer-Plus-Size-Waist-Cinched-Slimming-Trendy-Chiffon-Top-for-Women.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2a5d96ef74dc478194201ead7aed45e0U/YiXin-Woman-Blouse-2022-Long-Sleeve-Floral-Elegant-Blouses-for-Womens-Spring-Autumn-Chiffon-Blouse-Women-Tops.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H598f5d9b12d549da8373b3f5d63ae3896.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0a316eadd95c473b8b872adf9c97fc1cr/2026-Spring-Summer-High-Quality-Round-Neck-Shirt-Top-for-Women.jpg",
+                     "https://s.alicdn.com/@sc04/kf/A8e97587cc3894fe889a6ff5e6dbb87ada/Korea-Elegant-Lady-Blouses-Long-Sleeve-Office-Fashion-Design-Stand-Collar-Plain-Dyed-Solid-Pattern-Beading-Decoration-Simple-One.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf12ed6ed37b5401a96412b49ed389146V/Women-Spring-Long-Sleeve-Office-Lady-Elegant-Satin-Shirts-Women-s-Bead-Pleated-Stand-Collar-Blouses-Tops-Blouse-Casual-Shirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ac8fcd6fb8d804229a5b153260ec309d6D/Hot-Selling-Second-Hand-Women-s-Autumn-Casual-Plaid-Skinny-Knitted-Tops-Button-Mixed-Styles-Wholesale-Chinese-Factories-Directly.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB1w98Waf5G3KVjSZPxq6zI3XXa6/New-Ladies-White-Blusas-Women-s-Long-Sleeve-Chiffon-Lace-Crochet-Tops-Blouse.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3b8827ba6dd2486882fabfb774410af6c.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hfd00b6303ffd430e85201ad6b2528ad70.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H7f8c672008a3427f9c679bbba4bada8bN/Regular-Fit-Premium-Quality-Women-Crop-Top-T-Shirts-Hot-Selling-Women-Crop-Top-T-Shirts-Online-Sale.jpg",
+                     "https://sc04.alicdn.com/kf/HLB1jJxoRCzqK1RjSZPxq6A4tVXa6.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hd903ff95fe034dea9c5b1759a7835ec9c/Chinese-Style-Camisole-Women-s-tank-Tops-Mujers-Camis-Padded-Top-Encaje-Para-Mujer-Womens-tank-Tops-Para-Mujeres.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H19a5e788ad9d4eff9accefc36233108cW/BM-Summer-Fashionable-Sexy-Camisole-Hot-Selling-Modal-Solid-Color-Knitted-Inner-Top-for-Women-with-Built-In-Bra-Pads-tank-Top.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H00b9f61cf3334ab2b8c102a0a1394476i/BM-Women-s-Clothing-Summer-Solid-Lace-Round-Neck-Custom-Girls-Cotton-Vest-tank-Tops-Inner-Wear-Sleeveless-tank-Top-for-Women.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3e1bcf4bc82c48bbafeaab9731bf42e9W/OEM-Wholesale-Women-Ribbed-Rayon-Blend-Cami-Tank-Top-with-Built-in-Bra-Pads-No-Bra-Needed-Adjustable-Spaghetti-Strap-Camisole.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H96ab1411ba8d471888d52b8f2203030eC/China-Manufacturer-Custom-Wholesale-Fashion-Girl-Cotton-Tank-Top.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/A1e3df00a991440bdaa1a56cc11c9e0c3G/New-2025-Elegant-Solid-Color-High-Waist-Chinese-Vintage-Ball-Gown-Casual-Pleated-Breathable-Customizable-Maxi-Skirt-Women-s-100.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H7df8ef930e954b028f851007ddcbe402H/Ladies-Pleated-Long-Skirt-High-Waist-a-Line-Satin-Skirts-Women-Korean-Style-Mid-Length-Skirt.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H322a32d2f5a14fbda8e17247255d630cF/Wholesale-High-Quality-Women-Long-Skirt-High-Waist-Printed-Fashion-Swing-Skirt-Casual-Style-Pleated-Skirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H95fb3b414f0140579cd46fc35eca5658z/Best-Quality-Gradient-Pleated-Skirt-Maxi-Match-All-Kinds-of-blazer-2-Piece-Sets-Beautiful-Skirt-Autumn-Tight-Skirt-Collection.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H82fd7752af0744f78987bbf1ce6e34a3z/2025-French-Style-Acetate-Satin-Drape-Skirt-for-Women-Spring-and-Summer-Solid-Color-High-Waist-Fishtail-A-line-Long-Skirt.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hbcd7f47f925848be88065f8f61d7ad37W/China-Factory-Wholesale-Women-s-Elegant-Long-Denim-Skirt-Customized-Vintage-Fashion-for-Spring-Summer-Autumn-Winter.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H76389722faf441749109cdf8c18a1e605/Custom-Summer-New-Hot-Sale-Mini-Denim-Skirt-Fashion-Design-Button-Front-A-line-High-Waist-Casual-Women-Ladies-Jeans-Skirt.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H7e1c5b2f7f024e589802f52971c73e6e2/Bohemian-Chiffon-Long-Skirt-Female-High-Waist-Medium-Length-Girls-Floral-Skirt-Beach-Skirt-Casual-Dresses.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hdae0b5fcea0c4386a1604daeda752c0ap/Elegant-High-Quality-Ladies-Chiffon-Pleated-Long-Skirt-High-Waist-Breathable-Printed-Summer-Casual-Style-Girls-Autumn.jpg_300x300.jpg",
+                     "https://sc04.alicdn.com/kf/H1862cea7060e4b8ab0bd7136147451fcg.jpg",
+                     "https://sc04.alicdn.com/kf/Hebdea3518b6b4b4b819afdffbb3b4d877.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H4a93804a39554f75a8088c377a72e45ac/Pearlescent-Glossy-Silk-Smooth-Pleated-Skirt-for-Women-With-High-Waistsuper-Hot-Skirt-New-Summer-2025.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H40d3c534324443c1a819010c7c3797dfO/Elegant-Summer-Chiffon-Breathable-Midi-Skirt-Women-A-Line-Glossy-Silk-Casual-Solid.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc2268d9b3d93483a9e2152c9ca67eb05A/Wholesale-Fashion-Solid-Color-Pleated-Printed-Polyester-Chiffon-Long-Skirt-Elegant-High-Waist-Midi-Skirt.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H304d02e4a969430581f016f8eb55cd6dr.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hbbb62e08bb004e74897e32b4cdb49394g/China-Vendor-Cotton-Denim-Jeans-Cargo-Skirt-Women-s-Long-Maxi-Skirts-Fall-Outfits-for-Women.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb6ca53690bec40f2a7487c91c5ca4c8cV/Casual-Vacation-Style-Plus-Size-Women-s-A-Line-Skirt-Pink-Lace-up-Irregular-Ruched-Ruffles-Natural-Waist-for-Summer-Casual-Look.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3ec37dae6a4f4080987090ce169b3328t/Customized-Alooo-Yoga-Sports-Dress-for-Women-Plus-Size-High-Support-Sports-Short-Skirt-Lulu-Gym-Clothes-Dance-Short-Skirt.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He4df7e3ac1fa4281aa0c6b61f90a16abO.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0ff944e088674c18a2cbaf9425d5d102u/Ladies-Formal-Professional-Office-Skirt-Elastic-High-Waist-Asymmetrical-Wrap-Front-Wear-to-Work-Pencil-Skirts-for-Women.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H57e4ad83a4554b3e9796d0a2592335c5U/2025-Factory-Pencil-Work-Skirt-Women-Solid-Color-All-match-Slim-Blank-Sexy-Long-Skirts-for-Ladies.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He0c6b2107953447e95724055793c6066P/Spring-Summer-Vintage-Package-Empire-Waist-Office-Lady-Work-Wear-Sexy-Women-Casual-Midi-Pencil-Skirt-E71188.png",
+                     "https://s.alicdn.com/@sc04/kf/H5daf1dde0b314f6bae1e60572b076c41a/Women-s-Mid-Length-High-Waist-Pencil-Skirt-with-Side-Slit-Office-A-Line-Bodycon-Midi-Skirt-for-Work.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He95815548aea4b43b3e0f4f634fc08dcU/O777-high-Quality-XS-Women-Clothing-Trendy-Skirts-Office-Lady-Knit-Long-Skirt-for-Women-2026.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5f5c824d8f8d4bb5b82689e667f00fed9/Hot-Fashion-Women-Soft-Smoothy-Satin-Skirt-High-Waist-Elegant-Long-Skirts-for-Women-Fashion-Summer-Midi-Office-Women-s-Skirts.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H44653d1d626542c58165c55546f7b845M/YUANBOFEI-Wholesales-Stock-High-Quality-Casual-Breathable-High-Waist-Wide-Leg-Denim-Jeans-Baggy-Vintage-Trousers-Waist-Ladies.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H112444949f114f2da17d8593831fc05a4/TAOP-ZA-European-and-American-2025-Winter-New-Women-s-Casual-Versatile-Simple-Mid-Waist-Balloon-Loose-Jeans-3607211.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb0e3963ba89d40cd93c969e1d6167f987/China-Factory-Wholesale-High-Waist-Women-s-Sky-Blue-Flare-Denim-Jeans-Custom-Wide-Leg-Straight-Baggy-Plus-4XL-Casual-Washed.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2d6ad06d0cb34e0788954d578bc5f4b2k/China-Manufacturer-Plus-Size-Dark-Blue-Casual-Soft-Loose-Women-Mom-Denim-Jeans-Straight-Feet-Long-Wide-Leg-Jeans-Pants-for-Lady.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H09e03845152a456bb7bdb5c59bd97662t/China-Factory-Direct-Sales-Ladies-Slim-Stretch-Jeans-Pencil-Pants-Ripped-Destroyed-Women-s-Jeans.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2c02f8081355496f86529ac722cb7535w/Ladies-High-Waist-Casual-Black-Denim-Pencil-Pants-Comfortable-Stretch-Women-s-Skinny-Jeans.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf599d04cf6f34a6d8ff76048e880aed7v/OEM-Custom-Extra-Long-High-Waist-Denim-Jeans-Women-Black-Casual-Wear-Button-Straight-Style-for-Edge-Design-Factory-Price.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He30fdaf4fb364c578b1c161ab318d2a5y/Ladies-Two-Tone-Blue-Black-Tall-Stretchy-Flare-Jeans-Patchwork-Denim-Pants-Breathable-Feature-Streetwear-Waist-Hole-for-Women.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb26a21fd17c64d7381022a13c270677co/Liluo-Ripped-Skinny-Pencil-Jeans-Woman-Plus-Size-High-Waist-Mom-Push-up-Black-Stretch-Ladies-Denim-Pants-Trousers-Women-Jeans.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H993fad9ce6f943b0a9362957bfd1952ep/Casual-High-Waist-Classic-Pocket-Trousers-Wide-Leg-Pant-Denim-Women-Jeans-Baggy-Boyfriend-Black-Jeans-Cargo-Pants-Jeans-Women.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Os9o2LnJM8xUbThhCH6vNYu69_hvXuafmw&s",
+                     "https://s.alicdn.com/@sc04/kf/H8024e0b3e53541599ef6fb89ea4dc34e8/Wholesale-2020-China-Factory-New-Jeans-Men-s-Printed-Jeans-Stocklots.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hd5303ec2d09e47688822a0bf5636cae3a/High-quality-Second-hand-Summer-Men-s-Denim-Jeans-Wholesale-Directly-From-Chinese-Factories.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hd2535bb5cc004d1cac6974bf5577b360U/Mens-Solid-Double-Knee-Pants-Work-Denim-Jeans-Painter-Custom-Wide-Leg-Jeans-Cargo-Pants-Mens-Jeans-Carpenter-Pants-Men.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3cb2c6a1d97a434e95005050e2bb26de0.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H4f5b33bd21f647188f12d559b63cc8b4z/New-Oversize-Office-Chino-Pants-Outdoor-Men-Cotton-Back-Pockets-Cargo-Pant-Customized-Slim-Fit-Outwear-Straight-Chino-Trouser.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H28871060eb6f43f091d9ee8419aacd7dd/China-Factory-Street-Jeans-Four-pocket-Styling-Bungee-style-Drawstring-Non-stretch-Cargo-Pocket-Denim-Jean-for-Men.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UcWpkHaPR5253PhclIlMT4wQiSEW58basA&s",
+                     "https://s.alicdn.com/@sc04/kf/H524b231945c04763bb9198aed2f62ba7p/Best-Selling-Anti-Sagging-Wireless-Push-up-Bra-Seamless-One-Piece-Women-Bra-Breathable-Sports-Bra-for-Women-Seamless.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H05dc00a8976744cb82ea861adb436230x/Lace-Sexy-Lingerie-T-pants-Ladies-Suit-Is-Comfortable-and-Breathable-and-There-Is-No-Steel-Ring-to-Gather-the-Bra-Back-Button..jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1b93c9cecad44f24b136b5f4d50901cdm/China-Factory-Seamless-Bra-Gather-Fixed-Cup-No-Steel-Ring-Student-Girl-Underwear-Women-s-Bra-Set-Female.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hbc86240a8abc4252a19f1220b5555ff4e/OEM-China-Supplier-Breathable-Adjustable-Wire-Free-Floral-Lace-Sexy-Women-Bra-Panty-Sets.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb236cf1b8713426785ae20a103ae6c8cg/High-Quality-Ladies-Bra-Set-Comfortable-Seamless-T-Back-Wire-Free-Adjustable-Buckle-Everyday-Women-s-Underwear-Sexy-Thong-Suit.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H338346a8590d461eb7fbe363c5837fcdr/New-Light-Clothes-Without-Marks-and-No-Underwires-Comfortable-Gathering-Girl-s-Bra-Underwear-Bra-Wholesale.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H209af70174b74460b656ca4dd9087d1fs/Women-s-Comfortable-Floral-Print-Multicolor-Lace-Bra-Underwire-With-Adjustable-Straps-Sexy-Plunge-Breathable-Bra.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H28fe0d017a2746b1ad97fe28437f3c96n/China-Supplier-Low-Rise-Cotton-Women-s-Undergarments-Stripe-Print-Cotton-Panties-Lace-Young-Girls-Panty-Sexy-Underwear.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H437398621ab94c019579a77e0666a01cu/Women-Cheap-Common-Wholesale-Panties-Low-Price-by-the-Dozen-Pack-12-Pcs-Ladies-Panty-Cotton-Lace-Underwear.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hbf50fb678134474f8f13e0217e9ef6d3q/Custom-Wholesale-Fat-Women-S-Plus-Size-High-Rise-Sexy-Seamless-Sheer-Underwears-Ladies-Pink-White-Floral-Transparent-Lace-Panty.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3f0b2bf5e48e4efdb3beeb2ba991b44fM/Wholesale-Panty-Women-Sexy-Lace-Ladies-Underwear-Cotton-Underpants-Plus-Size-Panties-High-Waist-Panties.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H10df0b648b264dcaaf84b95a69be5584U/2025-Top-Cute-Fancy-Colorful-Fashion-Bag-Designer-Ladies-New-Model-Handbag-Crossbody.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hcf4f371894f542b78ad775881e573554o/Lady-Textured-Fashion-Mature-Luxurious-Elegant-Crossbody-Bags-New-Arrival-Large-Capacity-Trendy-PU-Water-Resistant-Handbag.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8940c29f945843a6935f5403f8b9dc67p/Wholesale-Luxury-Stylish-PU-Leather-Women-s-Shoulder-Handbags-Exquisite-Trendy-Fashion-Bag-for-Ladies.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H6906253b6f654de086c1b04ece921e78M.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hfb06b2e696d046af8aa6f1696965e22bl.jpg_350x350.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf85d0d36ac974debba4b972048ce6079G/Trendy-Niche-Luxury-2026-New-Bow-Handbags-for-Women-Perfect-for-Shoulder-or-Crossbody-Use-Classic-Flip-Cover-Small-square-Bags.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2cde9286d4a0417da4dfde0e57ecc1f6I/2024-New-Most-Popular-Woman-Handbags-in-China-Large-Lady-s-Messager-Bags-Embroidery-Flower.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc01/kf/H988b1b9fcaa849cea5cc8e245e368587a.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha5239854165b4c418560792e1b5e9c4ag/New-Fashion-Ladies-Hand-Bags-2-Piece-Luxury-Leather-Tote-Bags-Set-Trend-Fashion-Printing-Women-Handbag.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2fa5309b817b48889d56d80be4e829f0S.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hfcbc7c9b511b4723be2d16a9f687872b5/2025-China-Hot-Sell-High-Quality-Stylish-Fashion-Shoulder-Clutch-Women-Ladies-Bags-Handbag-Set.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H4b969708e7564ff6aaedc860ca523291s/ALC0020-Elegant-Women-s-Retro-Two-Piece-Set-Durable-PU-Polyester-New-Versatile-Messenger-Bags-for-Middle-Aged-Moms-Fashionable.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H4ebb7e6b098949e1955851d4f86f1055J.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H7da20a1ddaa3496895eba3d847bbbdfaO/Factory-Direct-China-Hand-Bag-Korean-Diamond-Bag-Pu-Ladies-Shoulder-Bag.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H4e572c6d17f24fd9821f4197eacf0e13b/New-Arrival-Children-Princess-Cute-Mini-Handbag-Kids-Purses-with-Chain-Fashion-Shoulder-Crossbody-Bag-for-Little-Girls.jpg",
+                     "https://sc04.alicdn.com/kf/Hc95c81a381204fe1b48c17778fdcda60i.jpg_350x350.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H75aeff3deedc467e9ef35e3db1ac94b9F.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Haf2789afca484f3a8583e7cfa4d34630G/Hand-Bags-Ladies-Luxury-Handbags-for-Women-China-Wholesale-Price-for-Cheap-Ladies-Bag-With-Chain-Shoulder-Bag.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2e6471f812ef45c19309b53a72572455a/New-Chinese-Style-Handbag-Spring-and-Summer-New-Song-Jin-Pattern-Women-s-High-end-Small-Square-Bag.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H99dc6cffd9cd4ce8a150a01af50779dca/Brand-New-Handbags-for-Women-in-the-Chinese-Market-Wholesale-Prices-for-Affordable-Women-s-Bags-and-Chain-Shoulder-Bags.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hef479c3d6839499b917d9cd53dd2f18bt/Custom-Logo-High-Quality-Hot-Sale-Fashion-Simple-Waterproof-Compartment-USB-Charging-Business-Travel-Laptop-Backpack-for-Men.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha5896526699e41a2a7565ed68be5a401E/Guangzhou-Custom-Men-PU-Fashion-Luxury-Waterproof-Backpack-for-College-School-Use-Customized-Color-Logo-YIKU-Brand-All-Seasons.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc2abeaa7ca2e462cb18d36e897728049S/Large-Capacity-Men-s-Laptop-Backpack-PU-Leather-Zipper-Waterproof-Trendy-USB-Cover-Functional-Fashion-Sports-School-Bags.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H870d121972804feab98ea6250c355086e/Popular-Brand-Outdoor-Sports-Lightweight-Backpack-Foldable-Waterproof-Hiking-Camping-Bag-Nylon-Travel-Men-Women-s-Backpack.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H9ef80d528a0040d28999098593b0b7ffh/Newest-Rucksack-Men-Chinese-Markets-Backpacker-Fashion-School-Custom-logo-Business-Backpack-Bag-Shopping-Online-Men-s-Backpacks.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb886a73c145b4ded938802b463fda568q/2023-alibaba-Factory-Waterproof-Travel-Laptop-Backpack-with-Shoes-Storage-New-Design-Other-Backpack-Sport-Bag-Hiking-Custom.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H16ceb8bbb0a747d9a061b50b38e5f2c2y.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1357b20b74694424abf617280e69d089u/2025-China-Wholesale-Fashion-Waterproof-Large-Capacity-Pu-Leather-Bags-Travel-Outdoor-Designer-Brand-Women-s-Backpack-for-Women.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H51f43caf1b37452b8d4ccc1348c02487H/Baoding-Baigou-Hebei-China-Factory-Manufacturer-OEM-Custom-Crossbody-Fanny-Pack-Shoulder-Man-Waist-Bag.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H43f4cd491d3b4f2687ba3e6704839efeu/Custom-Logo-Business-Men-Mochila-Travel-Student-Polyester-Usb-Waterproof-Bagpack-Back-Pack-Design-School-Laptop-Bag-Backpacks.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H4291747aa86141dabf0d0bdde3acd148w/China-Factory-Hot-Sale-Men-s-Vintage-Style-PU-Leather-Bag-Fashion-Vintage-Leather-Bag.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He71b3a48a5e947ce822180ab56ec9449n/China-Online-Wholesale-Custom-Men-s-Messenger-Bag-Pu-Leather-Small-Bag-Fashion-Casual-Shoulder-Bag-High-quality-Trendy-Men-s.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc6c7b0c7f1a24d52ad9515ada19b4fbd4/Designer-Emboss-Brand-Small-Square-Bag-Saffiano-Leather-Men-Mini-Crossbody-Pack-Casual-Sling-Shoulder-Side-Messenger-Bag-for-Men.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H53899fb9382b4fe0a2d4ea4b1f4b7d614/New-Sturdy-and-Durable-20-inch-Carry-on-Suitcase-Multiple-Colors-Lightweight-Travel-Luggage-Bag-for-College-Students..png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hfc7ee040b4f74e738785e68307ecf3b6A/Top-Sale-Colorful-ABS-Unisex-Luggage-Bag-Password-Lock-Carry-on-Zipper-Luggage-and-Cosmetic-Bag-Tow-Trolley-Travel-Luggage-Set.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H552a14462ef64e47b0671d3d2a95c3e0A/Chinese-Factory-Hard-Trolley-Luggage-Girls-Suitcase-Classic-Luggage-Sets-and-Other-Luggage-Travel-Bags.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5e9de38848334e8ea6b02d40c5a9b14dI/New-Product-Hot-Sale-Adult-Shanghai-Girl-Luggage-Sets-Smart-Vspink-Valise-Suitcases-Travel-Troly-Maletas-Hand-Bags.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc3edeeab4e304121ae0f75225bed08c7h/18-Inch-Suitcase-Boarding-Multifunctional-Travel-Suitcase-Student-Password-Trolley-Case-Rolling-Luggage-Bag-Set.jpg_300x300.jpg",
+                     "https://sc02.alicdn.com/kf/HTB1fozcenvI8KJjSspjq6AgjXXaR/Latest-Fashion-PU-Leather-travel-Bags-For.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H2c7440c9ee4341d3b5b9ffe2aa68c2794/In-Stock-New-Design-Gym-Travel-Sports-Duffel-Bag-Custom-Logo-Duffle-Bag-for-Women-Men.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Seb4ae88fa2b9475ea1108897247908c35/Latest-High-Quality-Stylish-Handcrafted-Genuine-Cow-Leather-With-Checkered-Pattern-Duffle-Bags-Luxury-Travel-Handbag-for-Unisex.jpg",
+                     "https://s.alicdn.com/@sc04/kf/S68a8ef6761074c2ca42ff9a1fdf14b02F/Hand-Tooled-Florals-Carved-Ace-Cards-Checkered-Pattern-100-Genuine-Leather-Weekender-Portable-Speedy-Duffle-Bag-Women-s-Travel.jpeg",
+                     "https://s.alicdn.com/@sc04/kf/Ha0000c03bb634f66b08cd9d054ade0966/1208B-8-Women-s-Shoes-Summer-Heeled-Sandals-New-Style-Ladies-Shoes-Thin-Heel-Sandals-Pointed-Design-High-Heels-Shoes-for-Women.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQYydTJjBW9TiWB5MmXpzKu_oSaYMMxFiNw&s",
+                     "https://s.alicdn.com/@sc04/kf/H74e9d4b914ed41b6b79e64b5159f5d766/Higher-Quality-Luxury-Designer-High-Heels-Sandals-Real-Leather-Summer-Fashion-Wedding-Ladies-High-heeled-Shoes-for-Women.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1a17cc99c11944eaacfda948ba2993bfm/Large-Size-34-43-Women-High-High-Quality-Stiletto-Heels-Cushioning-Square-Pointed-Toe-Wedding-Shoes-for-Summer-Autumn-Outdoor.png_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIZw9I9GS_HTcVjdCUNLDpkuxmS2YHgkUgYw&s",
+                     "https://s.alicdn.com/@sc04/kf/Hde2b8a0170d0461e89dfb352781e9158V.png",
+                     "https://s.alicdn.com/@sc04/kf/H581983fe5e2b4b77862bb51c01a46c0fa/2025-New-Designer-Women-s-Slip-On-High-Top-Stiletto-Heel-Bed-Shoes-Sexy-9cm-Flirting-Black-Red-Sole-Work-High-Heels-for-Summer.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha6c8a7b9a9924815995b472e6756ae35b/China-Cheap-Shoes-Pu-Leather-High-Heels-Nude-Pointed-Toe-Work-Formal-Shoes-Women-Pumps-Stiletto-Professional-Work.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hcc7c660b49be49ae976829e995b659c64/2025-Hot-Sale-Fashion-Women-Slip-On-Mary-Jane-Square-Heel-Buckle-Lightweight-Elegant-Style-Summer-Autumn-Shoes.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf799c2592ccf47eba630562817334a904/2025-China-Brand-Sexy-Crystal-Pumps-Stilettos-Ladies-High-Heel-Shoes-Wedding-Party-Bridal-Heels-for-Women.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJ9a4Wm95tBr2aUO1gMATkkuAJbsUjrPHlg&s",
+                     "https://s.alicdn.com/@sc04/kf/H85ef2ded36b54d6089a725f84167f5823/9116-5-Retro-Style-High-Heels-Shoes-for-Women-Slip-on-Color-Block-Pointed-Toe-9.5CM-Stiletto-Formal-Party-Shoes-Pumps-for-Women.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hcefa62786d14439789f834269db3d959x/Korean-Style-Elegant-Banquet-High-Heeled-Shoes-Breathable-Height-Increasing-Thin-Heels-Pointed-Toe-Slip-On-Women-s-Single-Shoes.jpg",
+                     "https://sc04.alicdn.com/kf/H76b98e048ed54c3ca846bd33b810bf5c3.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hd72b63d5ae7a4b09a2181297246fd9a39.jpg",
+                     "https://sc04.alicdn.com/kf/H8a7fbd16ed5e4fd6b24abd459be116c8d.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha41f602d1356472694786f7099eb8389T/7CM-9.5CM-Fashion-Sandalias-De-Tacon-Chain-Sexy-Pretty-Office-Shoes-Girl-Women-High-Heels.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXjPUogHlOpQ1hEkqw13X7d9c5DuQ6BV3Z4Q&s",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1e38P5PrA3lr2PQ0u8WFE9tiZMEcNVdPxvA&s",
+                     "https://s.alicdn.com/@sc04/kf/Hafafeb7046424c79adbcf2688a81ae35X/Black-Patent-Synthetic-Leather-High-Block-Heels-Closed-Toe-Shoes-for-Women.jpg_300x300.jpg",
+                     "https://sc04.alicdn.com/kf/H126d55ffee844c0cb9501f89843ccfb2E.jpg",
+                     "https://sc04.alicdn.com/kf/H9f01ad9045e44320b1d3e4582c1a85efH.jpg_250x250.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0ee095903b934cd1a41afd363499aca34.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0dadb88fa82c4f5a87f9c98c1218398bJ/Women-Shiny-Bow-Decoration-Factory-Wholesale-Silver-High-Heels-Multi-Season-Crystal-Princess-Pumps-Trendy-Bridal-Wedding-Shoes.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0e2aa480958544748341d3ed65882480W/6CM-8CM-10CM-Wedding-Chaussure-Fashion-Crystal-Rhinestone-Luxury-High-Covering-Stiletto-Gold-Heels-for-Women.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He2894af2fda2471d81e2b3fb0cf762f7M.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB1l1tOKVXXXXXBXpXXq6xXFXXXg/22-Colors-Wholesale-Bridal-Wedding-Shoes-White.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB122HjJFXXXXb2XXXXq6xXFXXXj/Ladies-Heel-Pointed-Toe-Shoes-White-Satin.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H263b7140c43542cfb85366f90b12dd4bx/New-Women-s-Pure-Color-White-Low-cut-Buckle-Pointed-Toe-Stiletto-Bridal-Women-Wedding-Shoes.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H5160d95fc68f42f8bc4ba5b1f88a0cdbX/Xuanhui-Fashion-High-Quality-Trendy-Round-Toe-Chinese-Mature-Durable-Sexy-8cm-square-High-Heel-Pumps-for-Women.jpg",
+                     "https://sc04.alicdn.com/kf/H0d9acc6a584e431e94ea66f0f23528abP/Women-Block-Heel-High-Sandals-Ladies-Heels-Shoes-China-PU-Plain-Spring-Fashion-New-Thick-heeled-Shoes-Shoes.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvpDQEiwAAGr70CgZ6egsk6Gk4G5VI9xc8cg&s",
+                     "https://s.alicdn.com/@sc04/kf/Hf2c87d5b689942f9a5ac7d81affbe5bdr/Women-Plus-Size-36-46-Pumps-High-Heels-5CM-Slip-On-Block-Heel-Formal-Shoes-Height-Increasing-Feature-for-Spring-Summer.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H919a5512b41e4cb9b6662079a241adabi/Fashion-Loafers-Elegant-Women-s-Shoes-for-Lady-Shoes.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H4309c1b211b343028983325b1746fd4fG/Hot-Sale-Summer-Beautiful-Girls-Ladies-Beach-Flat-Sandals-Shoes-Mules-Metal-Chains-Ladies-Fancy-Woman-Shoes-Sandals-Slippers.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H55897d32edd4488b898014a9eb49409dd/Wholesale-Ladies-Comfortable-Pumps-Shoes-Leather-Flat-Loafers-Microfiber-Upper-Women-Flats.jpg",
+                     "https://sc04.alicdn.com/kf/H33d8d152a8794dc39475a894f2b76899B.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS89UdbT_llAzu9ODrIAAQnJi-NrP5Rx2D0pg&s",
+                     "https://s.alicdn.com/@sc04/kf/Hec7b1d6eedce47c480aa7ead0244341b4/Simple-Ladies-slippers-and-Sandals-Wholesale-New-Ladies-Summer-Slipper-Latest-Design-Pcu-Ladies-slippers-2024.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He5101ae317df4996960c5d7b4424e042Y/Summer-Custom-Hawai-Chappal-Ladies-Pvc-Sandals-Sleeper-Women-Shoes-Ladies-Slide-Slippers.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He72acbc556cf48ebad45beda13a487c94/Women-Slippers-Summer-Sandals-Casual-Flat-Shoes-Female-Bowknot-Casual-Summer-Shoes-for-Women-Flip-Flop-Flats-Chaussure-Femme.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H3e83cbda8d554ee9a4872f1c6b4dc92dC/Women-Slippers-Summer-Sandals-Casual-Flat-Shoes-Female-Bowknot-Casual-Summer-Shoes-for-Women-slippers.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H11201c364dc94e24840086c5800aeccdc/Top-Quality-Cute-Quite-SlipperIndoor-Slipper-for-Home-Spa-HotelWoman-Coir-Slipper-Ms.Verda-00845871760963.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H6339e082ca1643518a5ec3d4e8e7b431q/Comfort-Women-Shoes-Simple-Flat-Sandals-Fancy-Ladies-Sandals-Slippers-Wholesale.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf0d6eda92fc74f369cdebe2b63af9295X/Wholesale-Spring-Fashion-Fashion-Trend-Slippers-Designer-Casual-Women-Flat-Sandals-Luxury-Shoes-Women-Walking-Style-Shoes.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hfcfc29df1dc6433ba457fbf6fd3ddefdA/2025-Women-s-Luxury-Ballet-Flats-Comfortable-Pu-Insole-Casual-Sandals-Soft-Upper-for-Summer-Season.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8198b8a54c0b469fb39450ca2928b4a3W/Zapatos-Woman-Shoes-New-Outdoor-Luxury-Ladies-Design-Round-Toe-Summer-Beach-Slides-slippers-Flat-Sandals-for-Women.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H09555f3b6e56447a8c8b538c37fa3375f/Classic-China-Factory-Wholesale-Italian-Men-S-Leather-Office-Dress-Shoes-for-Men-Wedding-Pehuea-Shoes.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H94d6199279724c1f8985168aedfd21dbD/New-Arrival-Elegant-Design-Leather-Shoes-Business-Wedding-Office-Party-Shoes-in-Stock.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H81ccd0b7b7784146aaa4d426c547298ex/Made-China-2025-New-Model-Promotional-Handcrafted-Embossed-Leather-Shoes-Men-Autumn-Waterproof-Height-Increasing-Slip-On-Square.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H83bb4e94427540f3ba899ad7c900d7750/027-318-High-Quality-Handmade-Genuine-Leather-Shoes-Men-Single-Button-Slip-On-Handmade-Dress-Shoes-Oxfords-Loafer-Party-Shoes.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hce78b796a2f2499b9c1362343044f23aR/Sh11486a-Metal-Buckle-Men-Office-Shoes-Genuine-Leather-2025-Leather-Shoes-for-Men.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb-34z0_K5jaZQS0aRgi9Fc0tkuCUP9_ZEdQ&s",
+                     "https://s.alicdn.com/@sc04/kf/H1f7c2328af084f6bad93df62eb5b9df1o/S0008X-New-Formal-Dress-Business-Casual-Men-s-Head-Layer-Cowhide-Breathable-Fashion-Pointed-Wedding-Shoes-Factory-Direct.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Ha040cee3dd0547babc8b6f2da641470aF/Genuine-Leather-Men-s-Dress-Shoes-Formal-Business-Oxfords-Vintage-Elegant-Party-Wedding-Shoe-Pointed-Toe-Man-Classic-Men-Dress.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/He8c15d71346149f3b7bc349640c16177g.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H17b7784c8fa041d292d4b1e98e9b5c84B/Plus-Size-Mens-Pu-Leather-Shoes-Trendy-Business-Dress-British-Breathable-Interior-Height-Increase-Round-Toe-Set-Mens-Shoes.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H8428f3bfee094d34bd6db71bb64d04ffn/Hand-Made-Italian-Styles-PU-Leather-Comfortable-Gray-Driving-Shoes-Casual-Flat-Shoes-Moccasins-for-Men.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H725d53ada3e34a15a767cd1042084535q/Sh10993a-Black-Color-Drop-Shipping-Men-Dress-Shoes-2024-Dress-Church-Shoes-for-Men.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWngaUDI65BMlBe-7SZYgrwFmk83KYS6Hqaw&s",
+                     "https://sc04.alicdn.com/kf/H8a7d712484ee49e69a61b484fd7df1f8r.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hfc90ee629b3c4e64be6ddb825cca12e4I/Men-s-Casual-Business-Oxford-Style-Dress-Shoes-Summer-Weddings-Popular-Office-Shoes-Men-Large-sized-EU-48-Formal-Shoes-for-Men.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFugL0vMEhW-syfSoho4oCMwu9hw2-_stYBg&s",
+                     "https://s.alicdn.com/@sc04/kf/Hc61529660df545618a55632e9947a3daJ/Men-s-Oxfords-Lace-up-Casual-Dress-Shoes-Classic-Formal-Modern-Business-Shoes.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hea6c35c14e134c088414e462c2197424Q/Men-s-Leather-Shoes-2024-Spring-and-Autumn-New-Business-Formal-Casual-Leather-Shoes-Korean-Version-of-the-British-Wedding-Shoes.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hec53d612f7ed48fa89c09b109e801096o/New-Large-Size-Leather-Shoes-Men-s-Business-Formal-Wedding-Shoes.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H105c5fb5d6594bb98f002c9f5dfac0bfz/New-Men-s-Shoes-Large-Men-s-Patent-Leather-Business-Leather-Shoes-Pointed-Shiny-Lightweight-and-Versatile-Work-Shoes.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc285dc92082b47c68b46109030ec958dQ.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H9018ecc592d745bfbea5643d770a6576q/Men-s-Loafers-Men-s-Casual-and-Breathable-Slip-on-Leather-Fashionable-Driving-Shoes-Stock-Wholesale.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H9ec4ba8ecf224ed48abaed7936290aab3/High-Quality-Loafers-Women-s-Black-Leather-Shoes-Vintage-Round-Head-Thick-Heel-Fashion-Casual-Shoes-Wholesale.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H066ba2d8129642c28f82a3ab08deef7dP/Formal-Man-Shoe-Casual-Loafer-Man-Genuine-Leather-Shoes-Factory-China-Wedding-Style-Leather-Loafer-Shoes-for-Men.jpg_300x300.jpg",
+                     "https://sc04.alicdn.com/kf/H36d5fdb334934d0f86849207a8525f5cF.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb0d2274e27e74bf39652ca7107734d10K/Handmade-Classic-PU-Leather-Dress-Shoes-for-Men-High-Quality-Tassel-Loafers-Casual-Design-Hot-Selling-Durable-Slip-on.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1880b5cab313445c920661ce5bf4f390y/sh11099a-Pure-leather-shoes-men-expensive-luxury-male-leather-shoes.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hb0d2274e27e74bf39652ca7107734d10K/Handmade-Classic-PU-Leather-Dress-Shoes-for-Men-High-Quality-Tassel-Loafers-Casual-Design-Hot-Selling-Durable-Slip-on.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H04781f1790a9449d9ed8f2474249d911V/China-Manufacturer-Wholesale-Custom-Men-Genuine-Leather-Cow-Suede-Flat-Driving-Moccasin-Casual-Loafer-Shoes.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H50c336e5e02f41d4a3a128d5df5dbc4bv/Shoes-Manufacturer-Direct-Sale-Excellent-Men-Faux-Suede-Leather-Moccasins-Slip-on-Driving-Shoes-Moccasin-Boat-Shoes-Custom.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hee43c7b35fc346eca328a67fa4ea88662/Maden-Unisex-German-Trainer-Casual-Walking-Shoes-Vintage-Sneakers-Men-Women-Leather-Sneakers-Male-Retro-Sneakers.jpg_300x300.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkL42ZcK7FZ1DAAesGRNl6Yc1XxHIUm_Ia5Q&s",
+                     "https://s.alicdn.com/@sc04/kf/H1285532729ea4678957efb63f793eb23z/New-Style-Men-s-Chinese-Style-Printed-High-Top-Skateboard-Sneakers-Thick-Sole-Casual-Sports-Shoes.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H4e39bd28302746a38a2c7f9cd97613b9Z/Wholesale-Comfort-Flat-Lace-up-Sneakers-Big-Size-Cheaper-Price-White-Casual-Shoes-for-Men-2024.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H584b6085099d4515927441cc96ad4332W/2025-Factory-Low-Price-Casual-Shoes-Men-Women-Mixed-Inventory-Hot-Sale-Fashion-Running-Sneakers-Made-in-China.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hc53d6723704e4d75b99d4dc795d9a108P/China-Fashion-Sneaker-Manufacturer-Low-MOQ-Running-Shoes-Casual-Walking-Style-Sports-Shoes-Zapatos-De-Hombre.jpg_300x300.jpg",
+                     "https://ae01.alicdn.com/kf/Sc88471c5920f4be8b8897cbdc851405aY.jpg_460x460q50.jpg_.webp",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJyY0Qt0rVYFeBZYP-hRspEDN0sqjBS6cVYg&s",
+                     "https://images.stockx.com/images/Nike-Air-Force-1-Low-China-Hoop-Dreams.png?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1618256866",
+                     "https://image.made-in-china.com/202f0j00TjZVNehIkCRJ/Cheap-Wholesale-Dropshipping-Top-Selling-Air-Force-1-Low-Just-Do-It-Designer-Brand-Putian-Shoes.webp",
+                     "https://s.alicdn.com/@sc04/kf/H5cd51277f4494e45bc0d931faeee7aa5N/Nike-Air-Force-1-07-Lv8-photon-Dust-Varsity-Red-Men-s-Outdoor-Shoes-Lightweight-Athletic-Sneakers.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H1404a0937202450792d5023b5f6a2937X/Nike-Air-Force-1-Fashion-Trendy-Daily-Skate-Shoes-Men-Women-Casual-Sneaker.jpg",
+                     "https://s.alicdn.com/@sc04/kf/A2e84b9dc77174c9ab762024279a34e160/Nike-Jordan-5-Retro-SE-PS-Boys-Shoes-Color-Midnight-Navy-Black-100-Authentic.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf024a18e591346f2a6cd45792e3fe2d1u/Designer-Air-13-High-Top-Men-s-Women-s-Basketball-Sneakers-Fashionable-Trendy-Design-Thick-Soled-Basketball-Style-Shoes.jpg_300x300.jpg",
+                     "https://www.globalsneakers.fr/cdn/shop/files/air-jordan-1-zoom-cmft-25-years-in-china-dv5575-140-6_2048x.webp?v=1688724677",
+                     "https://s.alicdn.com/@sc04/kf/H3d04a44e46774f1f8ad91e9828493339w/High-Quality-Designer-Lace-Suede-Gray-Basketball-Shoes-Men-s-Thick-Sole-Casual-Sneakers-Comfortable-High-Luminous-Trendy.jpg_300x300.jpg",
+                     "https://ae01.alicdn.com/kf/Sd60dd3472a564ef382682dbb4cd8627dx.jpg",
+                     "https://image.made-in-china.com/202f0j00EngcmqhGHkpz/Branded-Shoes-Women-Men-Sneakers-Air-Sport-Aj4-Basketball-Running-Factory-in-China-Zapato-De-Marca.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hf153cc138ec549edb6f1c3dd41e6d6b0v/MEGIR-2084-Own-Brand-Chinese-Men-Quartz-Watch-Original-Stainless-Steel-Band-3-Dials-Chrono-Character-Business-Hand-Watch.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H0134aa10bc64436f8dcabd7d27fa9a8dJ/Multi-Function-Watches-Chinese-Movements-Chronograpy-Cheap-Mens-Watches.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H59b5a6066aee4a8cbc0d39e6b7d4cb4aj/Good-Quality-Cheap-Luxury-Watches-Alloy-Women-Quartz-Watches-Rose-Gold-Mens-Glass-Chinese-Man-Fashion-Watches-OEM-Round-Analog.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnJQrpHCOHmCmTVbVIdQ6hm_WlzNf5ElivpQ&s",
+                     "https://sc04.alicdn.com/kf/Hed8b5ce357df4da8ba66ee380c7a3e068.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV5fiNedeAXDRbVVpejYtnWfbcuj1tHwRpCA&s",
+                     "https://s.alicdn.com/@sc04/kf/H632b3adadd4e45b1b7c182341c38ace4a/YuSa1075-Men-s-Watches-Cross-border-Hot-selling-Business-Classic-Chinese-Style-Men-s-Style-Watch-Band-Quartz-Watches.png",
+                     "https://image.made-in-china.com/202f0j00aoZYmrhcggqz/Factory-Wholesale-Skeleton-No-Brand-Watch-Men-Mechanical-Automatic-Unbranded.webp",
+                     "https://sc04.alicdn.com/kf/H2c6b5506e96445438071b7345e2af729w.jpg",
+                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHmSw1oqCiKqXLwLoEr5RkJJ_rg6UehszGwg&s",
+                     "https://s.alicdn.com/@sc04/kf/H750f1109c3ce4d3884b852cc6c7e3a93y/Hot-Sale-Product-Man-Business-Cheap-Prices-Alloy-Chinese-Brand-Wrist-Men-Quartz-Watch.jpg",
+                     "https://s.alicdn.com/@sc04/kf/U75962fa4f5604f3cb9a6ca03536ab673s/Cheap-Chinese-Wholesale-Watches-Leather-Couple-Watch-Man-and-Woman-Relojes-Al-Por-Mayor.jpg",
+                     "https://sc04.alicdn.com/kf/H561dd5ec3cae476da007f9e556f3cf8bs.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H244e7088c00c46d29509735462278c40Y.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB1JvIIaovrK1RjSspcq6zzSXXaN/Top10-Wrist-Watch-Brands-Skmei-Waterproof-Watches-Men-Wrist-Luxury-Watch.jpg_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hdc54556cef4042a9b47de23b034e4e245/Brand-Discount-Watch-Factory-Luxury-Fashion-Chinese-Movement-Big-Bezel-Men-s-Watch.jpg",
+                     "https://s.alicdn.com/@sc04/kf/H6cd5d9db39614118a9103ce0bde59947X/MEIBIN-1520-Chinese-High-Quality-Wholesale-Made-Custom-Top-Brand-Luxury-Stainless-Steel-3atm-Water-Resistant-Quartz-Watch.png_300x300.jpg",
+                     "https://s.alicdn.com/@sc04/kf/Hde6de0981c794782878a75f32517641ay/Fenyi-Wholesale-Made-in-China-Classic-Fashion-Casual-Retro-Business-Quartz-Pointer-Round-Full-Diamond-Bracelet-Watch-for-Women.jpg_300x300.jpg",
+                     "https://sc04.alicdn.com/kf/H12379a380bd04a1bb3023fa9cf987110b.jpg",
+                     "https://s.alicdn.com/@sc04/kf/HTB1DUVdOpXXXXXHXpXXq6xXFXXXm/Gold-Watch-Women-Luxury-Brand-Geneva-Ladies-Quartz-Watch-Gifts-Ladies-Fancy-Gold-Geneva-Watch.jpg"
+                 ]'>
+                <img src="https://thumbs.dreamstime.com/b/simple-clothes-hanger-logo-details-creative-design-business-boutique-fashion-lifestyle-beauty-wardrobe-wedding-dress-366949248.jpg" alt="Fashion">
+                <div class="card-content">
+                    <h3>Fashion</h3>
+                    <p>Discover the latest trends in fashion with our exclusive collection of high-quality clothing and accessories.</p>
+                    <button class="btn read-more">Read More </button>
+                </div>
+            </div>
+            <!-- Add more cards here -->
+        </div>
+
+    </section>
+</main>
+
+<footer>
+
+      <div class="footer-contact">
+    <p>
+        ultimatesourcing<br>China-Tanzania Sourcing services<br>
+        +255 711 819 771<br>
+        Kariakoo - Dar es Salaam<br>
+        Tanzania
+    </p>
+</div>
+
+
+    <div class="media-icons">
+        <a class="facebook" href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="instagram" href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a class="whatsapp" href="https://wa.me/255711819771" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <p>© 2026 Ultimate Sourcing | Trusted Sourcing Solutions</p>
+</footer>
+
+<!-- Responsive navigation script -->
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.main-nav');
+
+    if (menuBtn && nav) {
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('show');
+
+            const isOpen = nav.classList.contains('show');
+            menuBtn.setAttribute('aria-expanded', isOpen);
+
+            menuBtn.innerHTML = isOpen
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
+        });
+    }
+</script>
+
+<script>
+function handleSearch() {
+    const value = document.getElementById("searchBar").value.toLowerCase().trim();
+
+    //  Routing rules (you can expand this list)
+    const routes = [
+        {
+            keywords: ["clothes","fashion","outfit","dress","style","apparel","shoes","sneaker","rubbers",
+            "sandals","heels","loafers","flats","boots","slippers","socks","accessories","bags","handbags",
+            "jewelry","watches","glasses","sunglasses","hats","caps","scarves","belts","wallets",
+            "ties","suits","jackets","coats","pants","jeans","shorts","skirts","blouses","shirts",
+            "t-shirts","hoodies","sweaters","lingerie","swimwear","sportswear","activewear","outerwear",
+            "underwear","sleepwear","loungewear","formalwear","wedding dresses","evening gowns","cocktail dresses",
+            "casual wear","business attire","streetwear","children's clothing","baby clothes","plus size clothing",
+            "pet clothing","vintage clothing",
+            ],
+            url: "https://www.pinterest.com/search/pins/?q="
+        },
+        {
+            keywords: ["car","cars","vehicle","automobile","motor","bike",
+            "bicycle","scooter","truck","van","bus","SUV","sedan","coupe",
+            "convertible","sports car","luxury car","electric car",
+            "hybrid car","diesel car","gasoline car","self-driving car",
+            "toyota","honda","ford","chevrolet","nissan","bmw","mercedes",
+            "audi","volkswagen","hyundai","kia","mazda","subaru","tesla",
+            "rolls-royce","ferrari","lamborghini","porsche","bugatti",
+            "mclaren","hongqi","geely","great wall","chery","byd",
+            "baic","gac","wuling","neta","ora","leopaard",
+            "haval","foton","jinbei","dongfeng","howo","isuzu","faw","jmc","zotye","venucia","seres",
+            "gwm","changan","lifan","haima","luxgen","machineries",
+            "car parts","car accessories","spare parts","car repair","car dealership",],
+            url: "https://www.pinterest.com/search/pins/?q="
+        },
+        {
+            keywords: ["electronics","gadgets","phones",
+            "laptop","computer","tablet","camera","headphones",
+            "smartwatch","iphone","google pixel","Huawei","samsung s26",
+            "macbook","surface","kindle","playstation","xbox","nintendo switch",
+            "airpods","smart home","wearable","fitness tracker","drone","vr headset",
+            "wireless charger","bluetooth speaker","gaming console",
+            "4k tv","honor","oneplus","oppo","vivo","realme","xiaomi","redmi","poco","infinix",
+            "tecno","itel","lava","gionee","micromax","hisense","sharp","panasonic",
+            "sony","lg","philips","lenovo","asus","acer","dell","hp","msi","razer",
+            "logitech","anker","belkin","jbl","bose","refrigerator","washing machine",
+            "air conditioner","microwave","oven","vacuum cleaner","coffee maker","blender","toaster","kitchen appliances","home theater",
+            "smart tv","soundbar","projector","printer","scanner","external hard drive","samsung",
+            "apple","huawei","xiaomi","lenovo","asus","acer","dell","hp","msi","razer","phone accessories",
+            "computer accessories","gaming accessories",],
+            url: "https://www.pinterest.com/search/pins/?q="
+        },
+            {
+                keywords: ["furniture","home decor","interior design","sofa","table","chair",
+                "bed","mattress","couch","desk","cabinet","shelf","wardrobe",
+                "dining table","coffee table","nightstand","dresser",
+                "bookshelf","tv stand","armchair","recliner",
+                "outdoor furniture","patio furniture",
+                "home accessories","lighting","rugs",
+                "curtains","bedding","pillows",
+                "blankets","throws",
+                "wall art","mirrors",
+                "vases","clocks",
+                "storage solutions","lights","lamps","ceiling fans",
+                "home office furniture","kids furniture","baby furniture",
+                "vintage furniture","modern furniture","rustic furniture",
+                "industrial furniture","stadium lights","garden furniture",
+                "pool furniture","folding furniture","stage lights",
+                "event furniture","wedding furniture","decorations","centerpieces",
+                "tableware","dinnerware","flatware",],
+                url: "https://www.pinterest.com/search/pins/?q="
+            },
+             {
+                keywords: ["toys","games","puzzles","board games","action figures",
+                "dolls","lego","building blocks","remote control cars",
+                "video games","playsets","outdoor toys",
+                "educational toys","stuffed animals",
+                "trains","model kits",
+                "card games","role-playing games",
+                "collectibles","plush toys",
+                "baby toys","toddler toys",
+                "kids' crafts","science kits",
+                "art supplies",],
+                url: "https://www.pinterest.com/search/pins/?q="
+            },
+             {
+                keywords: ["sports","fitness","outdoors","exercise","gym",
+                "yoga","running","cycling","swimming",
+                "hiking","camping","fishing",
+                "team sports","basketball",
+                "soccer","football",
+                "baseball","tennis",
+                "golf","skiing",
+                "snowboarding","skateboarding",
+                "surfing","boxing",
+                "martial arts","climbing",
+                "kayaking","paddleboarding",
+                "water sports","fitness equipment",
+                "sportswear","athletic shoes",],
+                url: "https://www.pinterest.com/search/pins/?q="
+            },
+                {
+                    keywords: ["beauty","skincare","makeup","haircare",
+                    "fragrance","nail care","personal care",
+                    "face wash","moisturizer","serum",
+                    "sunscreen","lipstick","foundation",
+                    "mascara","eyeshadow","blush",
+                    "hair shampoo","hair conditioner",
+                    "hair styling products",
+                    "perfume","cologne",
+                    "body lotion","body wash",
+                    "deodorant","grooming products",],
+                    url: "https://www.pinterest.com/search/pins/?q="
+                },
+                    {
+                        keywords: ["books","literature","novels","fiction",
+                        "non-fiction","biography","autobiography",
+                        "mystery","thriller","science fiction",
+                        "fantasy","romance","historical fiction",
+                        "self-help","business books",
+                        "cookbooks","children's books",
+                        "young adult books",
+                        "graphic novels","comics",],
+                        url: "https://www.pinterest.com/search/pins/?q="
+                    },
+                            {
+                                keywords: ["music","instruments","guitars",
+                                "pianos","drums","violins",
+                                "saxophones","flutes",
+                                "microphones","headphones",
+                                "speakers","amplifiers",
+                                "mixing consoles",
+                                "dj equipment","record players",
+                                "vinyl records","sheet music",],
+                                url: "https://www.pinterest.com/search/pins/?q="
+                            },
+                            {
+                                keywords: ["electrical materials","wires","cables","switches",
+                                    "sockets","circuit breakers","fuses",
+                                    "electrical panels","conduits","connectors","transformers",
+                                    "generators","inverters","solar panels","batteries","led lights",
+                                    "light fixtures",
+                                    "electrical tools","multimeters","oscilloscopes","soldering equipment",
+                                    "electrical safety equipment","electrical enclosures","electrical tape",
+                                    "electrical connectors","electrical testing equipment",
+                                    "electrical supplies","hardaware","electrical components",
+                                    "electrical accessories","construction materials","building materials",
+                                    "home improvement","power tools","hand tools","hardware supplies",
+                                ],
+                                url: "https://www.pinterest.com/search/pins/?q="
+                            }
+    ];
+
+    //  Check if input matches any route
+    for (let route of routes) {
+        if (route.keywords.some(k => value.includes(k))) {
+            window.open(route.url + encodeURIComponent(value), "_blank");
+            return; // stop after redirect
+        }
+    }
+
+    //  Fallback: filter your own products
+    let cards = document.querySelectorAll(".product-card");
+
+    cards.forEach(card => {
+        let text = (
+            (card.getAttribute("data-name") || "") +
+            (card.querySelector("h3")?.textContent || "") +
+            (card.querySelector("p")?.textContent || "")
+        ).toLowerCase();
+
+        card.style.display = text.includes(value) ? "" : "none";
+    });
+}
+</script>
+
+<!-- Gallery Script (External) -->
+    <script src="gallery.js"></script>
+
+</body>
+</html>

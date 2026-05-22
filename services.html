@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Our Services - China Sourcing to Tanzania</title>
+</head>
+<body class="page-services">
+
+    <header>
+        <img src="Ultimate.png" width="180" height="150">
+        <!-- Hamburger menu button -->
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="order.html">Place Order</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-intro">
+
+            <img src="sourcing videos/services.png" 
+     alt="Black professional with logistics and shipping icons">
+            <h2>Our Comprehensive Services</h2>
+            <p>We provide end-to-end support for importing from China to Tanzania — efficiently, safely and cost-effectively.</p>
+        </section>
+
+        <section id="services-grid" class="services-grid">
+            <div class="service-card">
+                <h3>Product Sourcing</h3>
+                <p>Identify reliable, verified Chinese manufacturers based on specs, quantity and budget.</p>
+                <ul>
+                    <li>✔Product sourcing</li>
+                    <li>supplier identification</li>
+                    <li>✔ Supplier verification</li>
+                    <li>✔ Price negotiation</li>
+                    <li>✔ Factory comparison</li>
+                    <li>✔Product sourcing & supplier identification</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Sample & Quality Inspection</h3>
+                <p>Inspect samples and finished goods before production or shipping.</p>
+                <ul>
+                    <li>✔ Sample coordination</li>
+                    <li>✔ Photo & video inspection</li>
+                    <li>✔ Defect prevention</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Order Management</h3>
+                <p>Manage orders, monitor production, and provide regular updates.</p>
+                <ul>
+                    <li>✔ Production follow-up</li>
+                    <li>✔ Timeline control</li>
+                    <li>✔ Supplier communication</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Shipping & Logistics</h3>
+                <p>Arrange cost-effective air or sea shipping to Tanzania.</p>
+                <ul>
+                    <li>✔ Air & sea freight</li>
+                    <li>✔ Cargo consolidation</li>
+                    <li>✔ Shipping documentation</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Customs & Clearing Support</h3>
+                <p>Guide you through Tanzanian customs for smooth clearance.</p>
+                <ul>
+                    <li>✔ Import guidance</li>
+                    <li>✔ Documentation support</li>
+                    <li>✔ Delivery coordination</li>
+                    <li>✔Customs clearance assistance</li>
+                </ul>
+            </div>
+
+            <div class="service-card highlight">
+                <h3>End-to-End Support</h3>
+                <p>From inquiry to delivery — full journey support.</p>
+                 <ul class="service-list">
+        <li>✔Product sourcing & supplier identification</li>
+        <li>✔Quality inspection & assurance</li>
+        <li>✔Order processing & supplier coordination</li>
+        <li>✔Packaging & labeling support</li>
+        <li>✔After-sales support</li>
+    </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+<div class="footer-contact">
+    <p>
+         ultimatesourcing<br>China-Tanzania Sourcing services<br>
+        +255 711 819 771<br>
+        Kariakoo - Dar es Salaam<br>
+        Tanzania
+    </p>
+</div>
+
+
+    <div class="media-icons">
+        <a class="facebook" href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="instagram" href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a class="whatsapp" href="https://wa.me/255711819771" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+        <p>© 2026 Ultimate Sourcing | Trusted Sourcing Solutions</p>
+    </footer>
+
+    <!-- Responsive navigation menu script -->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('.main-nav');
+
+        if (menuBtn && nav) {
+            menuBtn.addEventListener('click', () => {
+                nav.classList.toggle('show');
+
+                const isOpen = nav.classList.contains('show');
+                menuBtn.setAttribute('aria-expanded', isOpen);
+
+                menuBtn.innerHTML = isOpen
+                    ? '<i class="fas fa-times"></i>'
+                    : '<i class="fas fa-bars"></i>';
+            });
+        }
+    </script>
+
+</body>
+</html>
