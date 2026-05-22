@@ -90,5 +90,89 @@
 
         <p>© 2026 Ultimate Sourcing | Trusted Sourcing Solutions</p>
     </footer>
+
+    <!-- Mobile Page Navigation: Swipe & Arrow Buttons -->
+<div class="page-nav-arrows" id="pageNavArrows">
+    <button class="arrow-btn left-arrow" id="prevPage" aria-label="Previous page">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <span class="page-indicator" id="pageIndicator"></span>
+    <button class="arrow-btn right-arrow" id="nextPage" aria-label="Next page">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</div>
+
+<script>
+    // --- Page order ---
+    const pages = [
+        { name: 'Home',         url: 'index.html' },
+        { name: 'Services',     url: 'services.html' },
+        { name: 'About Us',     url: 'about.html' },
+        { name: 'Place Order',  url: 'order.html' },
+        { name: 'Contacts',     url: 'contact.html' }
+    ];
+
+    // Detect current page from the <body> class (e.g. "page-home")
+    const bodyClassMap = {
+        'page-home':     0,
+        'page-services': 1,
+        'page-about':    2,
+        'page-order':    3,
+        'page-contact':  4
+    };
+
+    const bodyClass = [...document.body.classList]
+        .find(c => bodyClassMap[c] !== undefined);
+    const currentIndex = bodyClass !== undefined ? bodyClassMap[bodyClass] : 0;
+
+    // Update indicator text
+    const indicator = document.getElementById('pageIndicator');
+    if (indicator) {
+        indicator.textContent = `${pages[currentIndex].name} (${currentIndex + 1}/${pages.length})`;
+    }
+
+    // Arrow buttons
+    const prevBtn = document.getElementById('prevPage');
+    const nextBtn = document.getElementById('nextPage');
+
+    if (prevBtn) {
+        prevBtn.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) window.location.href = pages[currentIndex - 1].url;
+        });
+    }
+
+    if (nextBtn) {
+        nextBtn.style.visibility = currentIndex === pages.length - 1 ? 'hidden' : 'visible';
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < pages.length - 1) window.location.href = pages[currentIndex + 1].url;
+        });
+    }
+
+    // --- Swipe detection ---
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    document.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    document.addEventListener('touchend', (e) => {
+        const deltaX = e.changedTouches[0].screenX - touchStartX;
+        const deltaY = e.changedTouches[0].screenY - touchStartY;
+
+        // Only trigger if horizontal swipe is dominant (not a scroll)
+        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 60) {
+            if (deltaX < 0 && currentIndex < pages.length - 1) {
+                // Swipe LEFT → next page
+                window.location.href = pages[currentIndex + 1].url;
+            } else if (deltaX > 0 && currentIndex > 0) {
+                // Swipe RIGHT → previous page
+                window.location.href = pages[currentIndex - 1].url;
+            }
+        }
+    }, { passive: true });
+</script>
 </body>
 </html>
