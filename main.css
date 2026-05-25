@@ -376,7 +376,8 @@ footer {
     }
 
     header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: flex-start;
         gap: 15px;
         padding: 15px 20px;
     }
