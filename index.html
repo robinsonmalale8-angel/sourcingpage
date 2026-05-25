@@ -96,7 +96,7 @@
     <button class="arrow-btn left-arrow" id="prevPage" aria-label="Previous page">
         <i class="fas fa-chevron-left"></i>
     </button>
-    <span class="page-indicator" id="pageIndicator"></span>
+    
     <button class="arrow-btn right-arrow" id="nextPage" aria-label="Next page">
         <i class="fas fa-chevron-right"></i>
     </button>
@@ -126,10 +126,10 @@
     const currentIndex = bodyClass !== undefined ? bodyClassMap[bodyClass] : 0;
 
     // Update indicator text
-    const indicator = document.getElementById('pageIndicator');
-    if (indicator) {
-        indicator.textContent = `${pages[currentIndex].name} (${currentIndex + 1}/${pages.length})`;
-    }
+   // const indicator = document.getElementById('pageIndicator');
+    //if (indicator) {
+      //  indicator.textContent = `${pages[currentIndex].name} (${currentIndex + 1}/${pages.length})`;
+   // }
 
     // Arrow buttons
     const prevBtn = document.getElementById('prevPage');
