@@ -24,13 +24,13 @@ header {
 }
 
 header img {
-    width: 110px;                    /* good size – not too big */
+    width: 110px;
     height: auto;
     object-fit: contain;
-    border-radius: 50%;              /* nice round look */
-    border: 3px solid rgba(255, 255, 255, 0.35);  /* subtle white border */
-    box-shadow: 0 6px 20px rgba(0,0,0,0.25);     /* soft shadow for depth */
-    background: white;               /* white bg behind logo if transparent */
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    background: white;
     transition: transform 0.3s ease;
 }
 
@@ -58,7 +58,7 @@ header nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Hamburger button */
+/* Hamburger button - hidden on desktop */
 .menu-btn {
     background: none;
     border: none;
@@ -67,15 +67,12 @@ header nav a:hover {
     cursor: pointer;
     padding: 8px;
     display: none;
-
     position: absolute;
     top: 10px;
     right: 15px;
 }
 
-
-/* Social icons – centered at bottom above footer */
-
+/* ────────────── FOOTER ────────────── */
 .footer-contact {
     text-align: center;
     margin-bottom: 15px;
@@ -89,15 +86,19 @@ header nav a:hover {
     margin: 0;
 }
 
-.footer-contact p br {
-    margin-bottom: 5px;
+footer {
+    background: #161a1d;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem 1.5rem;
+    font-size: 0.95rem;
 }
 
 footer .media-icons {
     display: flex;
     justify-content: center;
-    gap: 32px;                      /* space between icons */
-    margin-bottom: 16px;            /* space above copyright text */
+    gap: 32px;
+    margin-bottom: 16px;
 }
 
 footer .media-icons a {
@@ -114,17 +115,9 @@ footer .media-icons a {
     text-decoration: none;
 }
 
-footer .media-icons a.facebook {
-    color: #1877f2;
-}
-
-footer .media-icons a.instagram {
-    color: #E1306C;
-}
-
-footer .media-icons a.whatsapp {
-    color: #25D366;
-}
+footer .media-icons a.facebook { color: #1877f2; }
+footer .media-icons a.instagram { color: #E1306C; }
+footer .media-icons a.whatsapp { color: #25D366; }
 
 footer .media-icons a:hover {
     transform: scale(1.10);
@@ -132,94 +125,19 @@ footer .media-icons a:hover {
     box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
-footer .media-icons a.facebook:hover {
-    background: rgba(24, 119, 242, 0.18);
-}
+footer .media-icons a.facebook:hover { background: rgba(24, 119, 242, 0.18); }
+footer .media-icons a.instagram:hover { background: rgba(236, 72, 153, 0.18); }
+footer .media-icons a.whatsapp:hover { background: rgba(37, 211, 102, 0.18); }
 
-footer .media-icons a.instagram:hover {
-    background: rgba(236, 72, 153, 0.18);
-}
-
-footer .media-icons a.whatsapp:hover {
-    background: rgba(37, 211, 102, 0.18);
-}
-/* Make footer content centered */
-footer {
-    background: #161a1d;
-    color: white;
-    text-align: center;
-    padding: 2.5rem 1rem 1.5rem;
-    font-size: 0.95rem;
-}
-
-/* Mobile – keep centered but slightly smaller */
-@media (max-width: 768px) {
-    footer .media-icons {
-        gap: 28px;
-    }
-
-    footer .media-icons a {
-        width: 44px;
-        height: 44px;
-        font-size: 1.6rem;
-    }
-}
-
-/* Button shared style */
-@media (max-width: 768px) {
-    .menu-btn {
-        display: block; /* override the none */
-    }
-
-    header nav {
-        display: none; /* hide nav links until menu is opened */
-    }
-}
-
-/* ── Mobile Page Navigation Arrows ── */
+/* ────────────── MOBILE NAV ARROWS ────────────── */
 .page-nav-arrows {
-    display: none; /* desktop: hidden */
+    display: none;
 }
 
-@media (max-width: 768px) {
-    .page-nav-arrows {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: fixed;
-        bottom: 18px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 88%;
-        max-width: 360px;
-        background: rgba(0, 0, 0, 0.55);
-        backdrop-filter: blur(6px);
-        border-radius: 50px;
-        padding: 10px 18px;
-        z-index: 999;
-    }
-
-    .arrow-btn {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.4rem;
-        cursor: pointer;
-        padding: 6px 12px;
-        transition: color 0.2s;
-    }
-
-    .arrow-btn:hover {
-        color: #60a5fa;
-    }
- }
-   
-
-/* ────────────── HOME PAGE (index.html) ────────────── */
-
+/* ────────────── HOME PAGE ────────────── */
 .page-home {
     min-height: 100vh;
-    background: #2696E9;          
+    background: #2696E9;
 }
 
 .page-home .home {
@@ -334,7 +252,7 @@ footer {
     font-size: 0.98rem;
     font-weight: 700;
     border-radius: 22px;
-    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 24px 48px rgba(0,0,0,0.18);
     text-align: left;
     line-height: 1.6;
     letter-spacing: 0.02em;
@@ -342,12 +260,12 @@ footer {
 }
 
 @keyframes slideInCaption {
-    0% { opacity: 0; transform: translateX(30px) scale(0.96); }
+    0%   { opacity: 0; transform: translateX(30px) scale(0.96); }
     100% { opacity: 1; transform: translateX(0) scale(1); }
 }
 
 @keyframes pulseCaption {
-    0% { box-shadow: 0 20px 36px rgba(0,0,0,0.12); }
+    0%   { box-shadow: 0 20px 36px rgba(0,0,0,0.12); }
     100% { box-shadow: 0 26px 52px rgba(0,0,0,0.22); }
 }
 
@@ -363,34 +281,10 @@ footer {
 
 @keyframes shineMove {
     0%   { transform: translateX(-100%); }
-    100% { transform: translateX(100%);  }
+    100% { transform: translateX(100%); }
 }
 
-/* ────────────── RESPONSIVE ────────────── */
-@media (max-width: 992px) {
-    .page-home .home-container {
-        grid-template-columns: 1fr;
-        padding: 0 25px;
-        gap: 50px;
-        text-align: center;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
-    }
-
-    header img {
-        width: 120px;            /* smaller logo on smaller screens */
-    }
-
-    header h1 {
-        font-size: 1.6rem;
-    }
-}
-
-/* ────────────── SERVICES PAGE (services.html) ────────────── */
+/* ────────────── SERVICES PAGE ────────────── */
 .services-intro {
     text-align: center;
     padding: 5rem 5% 3rem;
@@ -398,16 +292,17 @@ footer {
 }
 
 .services-intro img {
-   position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0.15;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0,0,0,0.45);
     z-index: 1;
 }
+
 .services-intro h2 {
     font-size: 2.8rem;
     color: #1e293b;
@@ -470,27 +365,14 @@ footer {
 
 .service-card.highlight {
     background: white;
-    color: white;
     transform: translateY(-2px);
     box-shadow: 0 15px 40px rgba(38,150,233,0.18);
 }
 
-.service-card.highlight h3 {
-    color: #3f4042;
-}
+.service-card.highlight h3 { color: #3f4042; }
 
-.service-card.highlight p {
-    color: rgba(255,255,255,0.95);
-}
-
-.service-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 50px rgba(38,150,233,0.18);
-    border-color: #60a5fa;
-}
-
-
-.page-about .about{
+/* ────────────── ABOUT PAGE ────────────── */
+.page-about .about {
     padding: 6rem 5% 4rem;
     background: linear-gradient(to bottom, #8d969e 0%, #e0f2fe 100%);
     min-height: 80vh;
@@ -499,10 +381,8 @@ footer {
 
 .page-about .about-video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     object-fit: cover;
     opacity: 0.15;
     z-index: 1;
@@ -512,9 +392,10 @@ footer {
     position: relative;
     z-index: 2;
 }
-.page-about .about h2{
+
+.page-about .about h2 {
     font-size: 3rem;
-    color:  #1e293b;
+    color: #1e293b;
     margin-bottom: 1.8rem;
     font-weight: 800;
     letter-spacing: -1px;
@@ -522,7 +403,7 @@ footer {
     display: inline-block;
 }
 
-.page-about .about h2::after{
+.page-about .about h2::after {
     content: '';
     position: absolute;
     bottom: -12px;
@@ -534,7 +415,7 @@ footer {
     border-radius: 2px;
 }
 
-.page-about .about p{
+.page-about .about p {
     font-size: 1.18rem;
     line-height: 1.8;
     color: #334155;
@@ -543,12 +424,8 @@ footer {
     opacity: 0.92;
 }
 
-.page-about .about p:last-child{
-    margin-bottom: 0;
-}
-
-.page-about .about-content{
-    background:  white;
+.page-about .about-content {
+    background: white;
     border-radius: 16px;
     padding: 3rem;
     box-shadow: 0 10px 40px rgba(0,0,0,0.08);
@@ -556,104 +433,7 @@ footer {
     margin: 0 auto;
 }
 
-/* Mobile Adjustment*/
-@media (max-width: 768px){
-    .page-about .about{
-        padding: 5rem 6% 3rem;
-    }
-
-    .page-about .about h2{
-        font-size: 2.4rem;
-    }
-
-    .page-about .about p{
-        font-size: 1.1rem;
-    }
-     
-    .page-about .about-content{
-        padding: 2rem;
-    }
-}
-
-/* ────────────── RESPONSIVE ────────────── */
-@media (max-width: 992px) {
-    .home-container {
-        grid-template-columns: 1fr;
-        padding: 0 25px;
-        gap: 50px;
-        text-align: center;
-    }
-
-    .home-content { order: 2; }
-    .home-image-wrapper { order: 1; }
-
-    .home-image {
-        max-height: 60vh;
-    }
-
-}
-
-
-@media (max-width: 768px) {
-    header {
-        padding: 15px 20px;
-        flex-wrap: wrap;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .main-nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #2696E9;
-        flex-direction: column;
-        padding: 20px 0;
-        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    }
-
-    .main-nav.show {
-        display: flex;
-    }
-
-    .main-nav a {
-        color: white;
-        padding: 16px 30px;
-        font-size: 1.2rem;
-        text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.15);
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-        padding: 2rem 5%;
-    }
-
-    .services-intro {
-        padding: 4rem 5% 2.5rem;
-    }
-
-    .page-home .home-image-wrapper:nth-of-type(2) {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .page-home .home-image-wrapper:nth-of-type(2) .home-image {
-        max-width: 100%;
-        min-width: 0;
-    }
-
-    .page-home .home-image-wrapper:nth-of-type(2) .image-caption {
-        width: 100%;
-    }
-}
-
 /* ────────────── PRODUCT CARDS ────────────── */
-
 .product-showcase {
     padding: 6rem 5% 4rem;
     background: #f8fafc;
@@ -662,13 +442,12 @@ footer {
 
 .search-container {
     display: flex;
-    top: 40px;
-    right: 40px;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     gap: 8px;
 }
+
 .search-bar {
     padding: 10px 16px;
     width: 430px;
@@ -679,6 +458,7 @@ footer {
     background: white;
     transition: all 0.3s ease;
 }
+
 .search-bar:focus {
     border-color: #60a5fa;
     box-shadow: 0 0 0 3px rgba(96,165,250,0.15);
@@ -737,7 +517,6 @@ footer {
     box-shadow: 0 20px 60px rgba(0,0,0,0.22);
 }
 
-/* Yellow/orange corner accents */
 .product-card::before,
 .product-card::after {
     content: '';
@@ -745,29 +524,23 @@ footer {
     width: 90px;
     height: 90px;
     background: transparent;
-    border: 10px solid #f59e0b; /* orange-yellow */
+    border: 10px solid #f59e0b;
     border-radius: 12px;
 }
 
 .product-card::before {
-    top: -10px;
-    left: -10px;
-    border-right: none;
-    border-bottom: none;
+    top: -10px; left: -10px;
+    border-right: none; border-bottom: none;
 }
 
 .product-card::after {
-    bottom: -10px;
-    right: -10px;
-    border-left: none;
-    border-top: none;
+    bottom: -10px; right: -10px;
+    border-left: none; border-top: none;
 }
 
 .card-content {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 0; left: 0; right: 0;
     padding: 2.2rem 2rem 1.8rem;
     background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.45) 100%);
     color: white;
@@ -804,30 +577,11 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-    .product-card {
-        height: 380px;
-    }
-
-    .card-content {
-        padding: 1.8rem 1.5rem 1.5rem;
-    }
-
-    .card-content h3 {
-        font-size: 1.45rem;
-    }
-}
-
-/* =============================================
-   CONTACT PAGE - Narrower & Compact Grey + Gold
-   ============================================= */
-
+/* ────────────── CONTACT PAGE ────────────── */
 .page-contact {
     background: #f8f9fa;
 }
 
-/* Main Heading */
 .contacts h2 {
     font-size: 3rem;
     color: #1e293b;
@@ -845,17 +599,15 @@ footer {
     line-height: 1.7;
 }
 
-/* Narrower Wrapper */
 .contact-wrapper {
-    max-width: 920px;           /* Reduced width */
+    max-width: 920px;
     margin: 0 auto 4.5rem;
     padding: 0 15px;
 }
 
-/* Compact Form */
 .contact-form {
     background: white;
-    padding: 2.4rem 2.2rem;     /* Reduced padding */
+    padding: 2.4rem 2.2rem;
     border-radius: 18px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.08);
     border: 1px solid #e2e8f0;
@@ -883,7 +635,7 @@ footer {
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #d4af37;
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.15);
     background: white;
 }
 
@@ -891,14 +643,12 @@ footer {
     min-height: 150px;
 }
 
-/* reCAPTCHA */
 .recaptcha {
     padding: 13px 16px;
     margin: 1.6rem 0;
     border-radius: 10px;
 }
 
-/* Submit Button */
 .submit-btn {
     width: 80%;
     background: #d4af37;
@@ -915,7 +665,6 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Success Message */
 .success-message {
     display: none;
     margin-top: 1.6rem;
@@ -927,12 +676,10 @@ footer {
     font-weight: 500;
 }
 
-/* ===================== GET IN TOUCH - Narrower ===================== */
-
 .get-in-touch {
-    max-width: 920px;           /* Reduced width */
+    max-width: 920px;
     margin: 0 auto;
-    padding: 3.2rem 2.4rem;     /* Reduced padding */
+    padding: 3.2rem 2.4rem;
     background: white;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.08);
@@ -946,7 +693,6 @@ footer {
     margin-bottom: 2.8rem;
 }
 
-/* Reach Us - More Compact */
 .reach-us {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -977,7 +723,6 @@ footer {
     margin-bottom: 5px;
 }
 
-/* Sourcing Section - Compact */
 .sourcing-services {
     background: linear-gradient(135deg, #f8f9fa, #f1f5f9);
     padding: 2.6rem 2rem;
@@ -1006,7 +751,7 @@ footer {
     padding: 14px 36px;
     border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 8px 25px rgba(212,175,55,0.3);
 }
 
 .big-phone:hover {
@@ -1014,8 +759,161 @@ footer {
     transform: translateY(-4px);
 }
 
-/* ===================== RESPONSIVE ===================== */
+/* ══════════════════════════════════════════
+   RESPONSIVE — tablets (max 992px)
+   Only layout changes, never touch header flex
+   ══════════════════════════════════════════ */
+@media (max-width: 992px) {
+    .page-home .home-container {
+        grid-template-columns: 1fr;
+        padding: 0 25px;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .home-container {
+        grid-template-columns: 1fr;
+        padding: 0 25px;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .home-content { order: 2; }
+    .home-image-wrapper { order: 1; }
+
+    .home-image {
+        max-height: 60vh;
+    }
+
+    header img {
+        width: 90px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — mobile phones (max 768px)
+   ══════════════════════════════════════════ */
 @media (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 12px 20px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    header img {
+        width: 70px;
+    }
+
+    /* Show hamburger, hide nav */
+    .menu-btn {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    /* Dropdown nav when open */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #2696E9;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        z-index: 999;
+    }
+
+    .main-nav.show {
+        display: flex;
+    }
+
+    .main-nav a {
+        color: white;
+        padding: 16px 30px;
+        font-size: 1.2rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    /* Footer */
+    footer .media-icons {
+        gap: 28px;
+    }
+
+    footer .media-icons a {
+        width: 44px;
+        height: 44px;
+        font-size: 1.6rem;
+    }
+
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 5%;
+    }
+
+    .services-intro {
+        padding: 4rem 5% 2.5rem;
+    }
+
+    /* Home images */
+    .page-home .home-image-wrapper:nth-of-type(2) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .page-home .home-image-wrapper:nth-of-type(2) .home-image {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .page-home .home-image-wrapper:nth-of-type(2) .image-caption {
+        width: 100%;
+    }
+
+    /* About */
+    .page-about .about {
+        padding: 5rem 6% 3rem;
+    }
+
+    .page-about .about h2 {
+        font-size: 2.4rem;
+    }
+
+    .page-about .about p {
+        font-size: 1.1rem;
+    }
+
+    .page-about .about-content {
+        padding: 2rem;
+    }
+
+    /* Product cards */
+    .product-card {
+        height: 380px;
+    }
+
+    .card-content {
+        padding: 1.8rem 1.5rem 1.5rem;
+    }
+
+    .card-content h3 {
+        font-size: 1.45rem;
+    }
+
+    /* Contact */
     .contact-wrapper,
     .get-in-touch {
         max-width: 100%;
@@ -1035,18 +933,12 @@ footer {
         font-size: 1.4rem;
         padding: 13px 28px;
     }
-}
 
-/*Mobile Page Navigation Arrows */
-.page-nav-arrows {
-    display: none;
-}
-
-@media (max-width: 768px) {
+    /* Mobile nav arrows */
     .page-nav-arrows {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         position: fixed;
         bottom: 18px;
         left: 50%;
